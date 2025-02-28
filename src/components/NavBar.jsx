@@ -1,39 +1,120 @@
-import React from "react";
+'use client';
+
+import React, { useState } from "react";
 import Image from "next/image";
 
 const NavBar = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     return (
-        <nav className="bg-[rgba(0,0,0,0.7)]  flex justify-between items-center p-4 h-[5rem] w-[77.5rem] rounded-xl " >
-            <div className="flex items-center">
-                <img src="\logo\logo 1-min (1) 2.png" alt="UNIFEST 2025 Logo" className="h-full w-auto mr-4 pt-1" />
-            </div>
-            <ul className="flex space-x-8 ">
-                <li>
-                    <a href="#" className="text-white relative px-4 py-3">
-                        <span className="absolute inset-0 border-4 border-white border-dotted "></span>
-                        <span className="relative z-10">HOME</span>
-                    </a>
-                    
-                </li>
-                <li>
-                    <a href="#" className="text-white ">EVENTS</a>
-                </li>
-                <li>
-                    <a href="#" className="text-white">SPONSORS</a>
-                </li>
-                <li>
-                    <a href="#" className="text-white">ORGANISING TEAM</a>
-                </li>
-                <li>
-                    <a href="#" className="text-white">CONTACT US</a>
-                </li>
-            </ul>
-            <div className="translate-x-1/2">
-                <button className="bg-[#C01E0D]  text-white p-4 h-[50px] py-2 rounded-[10px] shadow-[inset_1px_4px_8px_rgba(0,0,0,0.6)]  hover:bg-red-700 transition">
-                    Buy Passes
+        <nav className="bg-black/80 backdrop-blur-sm pr-4 h-24 w-[96%] max-w-7xl  rounded-xl shadow-lg border border-white/10 flex items-center  z-50">
+
+            <div className="flex items-center justify-between w-full">
+
+                <div className="flex items-center ml-0 ">
+                    <div className="w-55 h-35 relative overflow-hidden flex-shrink-0">
+                        <img
+                            src="/logo/logo 1-min (1) 2.png"
+                            alt="UNIFEST 2025 Logo"
+                            className="object-contain w-full h-full"
+                        />
+                    </div>
+                </div>
+
+                {/* Mobile menu button */}
+                <button
+                    className="md:hidden text-white p-2 rounded-lg hover:bg-white/10 transition-colors"
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    aria-label="Toggle menu"
+                >
+                    {isMenuOpen ? (
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    ) : (
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    )}
                 </button>
+
+                {/* Desktop Navigation */}
+                <div className="hidden md:flex items-center justify-center flex-grow">
+                    {/* Navigation Links */}
+                    <ul className="flex space-x-6 lg:space-x-10">
+                        {/* Home link already has the dotted border */}
+                        <li>
+                            <a href="#" className="text-white relative px-4 py-3 font-medium tracking-wide transition-colors hover:text-red-300">
+                                <span className="absolute inset-0 border-2 border-white border-dotted opacity-70"></span>
+                                <span className="relative z-10">HOME</span>
+                            </a>
+                        </li>
+                        {/* Update the other links with the same pattern */}
+                        <li>
+                            <a href="#" className="text-white relative px-4 py-3 font-medium ">
+                                <span className="absolute inset-0 border-2 tracking-wide border-white border-dotted opacity-0 transition-opacity hover:opacity-20"></span>
+                                <span className="relative z-10">EVENTS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className="text-white relative px-4 py-3 font-medium ">
+                                <span className="absolute inset-0  border-2 tracking-wide border-white border-dotted opacity-0 transition-opacity hover:opacity-20"></span>
+                                <span className="relative z-10">SPONSORS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className="text-white relative px-4 py-3 font-medium ">
+                                <span className="absolute inset-0 border-2 border-white border-dotted opacity-0 transition-opacity hover:opacity-20 tracking-wide"></span>
+                                <span className="relative z-10">ORGANISING TEAM</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className="text-white relative px-4 py-3 font-medium ">
+                                <span className="absolute inset-0 border-2 border-white border-dotted opacity-0 transition-opacity hover:opacity-20 tracking-wide"></span>
+                                <span className="relative z-10">CONTACT US</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                {/* Buy Passes Button - desktop */}
+                <div className="hidden md:block translate-x-1/2">
+                    <button className="bg-[#C01E0D] text-white px-5 py-2 rounded-lg shadow-[inset_1px_4px_8px_rgba(0,0,0,0.4)] hover:bg-red-700 transition-colors font-medium transform hover:scale-105 duration-200">
+                        Buy Passes
+                    </button>
+                </div>
             </div>
-            
+
+            {/* Mobile menu content */}
+            <div
+                className={`${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} md:hidden overflow-hidden transition-all duration-300 ease-in-out absolute top-24 left-0 right-0 bg-black/80 backdrop-blur-sm p-4 rounded-b-xl z-55 mx-4`}
+            >
+                <ul className="flex flex-col space-y-4 pt-2">
+                    <li>
+                        <a href="#" className="text-white relative px-4 py-3 block font-medium">
+                            <span className="absolute inset-0 border-2 border-white border-dotted opacity-70"></span>
+                            <span className="relative z-10">HOME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" className="text-white block py-2 px-4 hover:bg-white/10 rounded transition-colors">EVENTS</a>
+                    </li>
+                    <li>
+                        <a href="#" className="text-white block py-2 px-4 hover:bg-white/10 rounded transition-colors">SPONSORS</a>
+                    </li>
+                    <li>
+                        <a href="#" className="text-white block py-2 px-4 hover:bg-white/10 rounded transition-colors">ORGANISING TEAM</a>
+                    </li>
+                    <li>
+                        <a href="#" className="text-white block py-2 px-4 hover:bg-white/10 rounded transition-colors">CONTACT US</a>
+                    </li>
+                </ul>
+                <div className="mt-4 pb-2 ">
+                    <button className="bg-[#C01E0D] w-full text-white py-3 rounded-lg shadow-[inset_1px_4px_8px_rgba(0,0,0,0.4)] hover:bg-red-700 transition-colors font-medium">
+                        Buy Passes
+                    </button>
+                </div>
+            </div>
         </nav>
     );
 };
