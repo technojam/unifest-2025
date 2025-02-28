@@ -7,7 +7,7 @@ const Orgateam = () => {
     <>
 <div className="img23">
 
-  <img className='img123' src="./assests/Vector.jpg" alt="" />
+  <img className="absolute inset-0 w-full h-full z-0" src="" alt="" />
 
 
     <div className='cw'>Organising Team </div>
