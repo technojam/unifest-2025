@@ -1,23 +1,10 @@
 import React from "react";
+import Image from "next/image";
 
 const NavBar = () => {
     return (
-        <nav className="bg-black flex justify-between items-center p-4">
-         
-            <ul className="flex space-x-4">
-                <li>
-                    <a href="#" className="text-white">Home</a>
-                </li>
-                <li>
-                    <a href="#" className="text-white">About</a>
-                </li>
-                <li>
-                    <a href="#" className="text-white">Services</a>
-                </li>
-                <li>
-                    <a href="#" className="text-white">Contact</a>
-                </li>
-            </ul>
+        <nav className="bg-black/60 flex absolute justify-between items-center px-4 h-20 max-w-7xl w-full rounded-xl">
+            
         </nav>
     );
     }
