@@ -7,12 +7,12 @@ const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <nav className="bg-black/80 backdrop-blur-sm pr-4 h-24 w-[96%] max-w-7xl  rounded-xl shadow-lg border border-white/10 flex items-center  z-50">
+        <nav className="bg-black/80 backdrop-blur-sm pr-4 h-16 w-[96%] max-w-7xl  rounded-xl shadow-lg border border-white/10 flex items-center  z-50">
 
             <div className="flex items-center justify-between w-full">
 
                 <div className="flex items-center ml-0 ">
-                    <div className="w-55 h-35 relative overflow-hidden flex-shrink-0">
+                    <div className="w-43 h-23 relative overflow-hidden flex-shrink-0">
                         <img
                             src="/logo/logo 1-min (1) 2.png"
                             alt="UNIFEST 2025 Logo"
