@@ -1,10 +1,7 @@
 import Image from "next/image";
 import NavBar from "@/components/NavBar";
-<<<<<<< HEAD
 import Orgateam from "@/components/orgateam";
-=======
 
->>>>>>> 2b74bb49ce8e4c2e93894d3577601301295a3206
 export default function Home() {
   return (
     <div 
