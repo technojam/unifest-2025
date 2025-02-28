@@ -1,17 +1,3 @@
-@font-face {
-    font-family: 'Alinore';
-    src: url('/fonts/Alinore.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Montesaro';
-    src: url('/fonts/Montesaro.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
   /* Tailwind extends */
   .font-alinore {
     font-family: 'Alinore', serif;

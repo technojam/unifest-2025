@@ -5,9 +5,7 @@ const Orgateam = () => {
   return (
     <div className="relative w-full min-h-[300px] bg-cover bg-center text-white p-8 md:p-12 
     ">
-      <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-[#D69924] to-yellow-400 text-7xl md:text-7xl font-bold text-center uppercase tracking-wider drop-shadow-xl 
-      
-      font-alinore ">
+      <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-[#D69924] to-yellow-400 text-7xl md:text-7xl font-bold text-center uppercase tracking-wider drop-shadow-xl font-alinore ">
         Organising Team
       </h1>
 

@@ -8,9 +8,6 @@ module.exports = {
   darkMode: "class", // Enable dark mode (can be 'media' or 'class')
   theme: {
     extend: {
-      fontFamily: {
-        sans: ["Alinore", "sans-serif"], // Custom font
-      },
       spacing: {
         "18": "4.5rem", // Custom spacing
         "22": "5.5rem",
