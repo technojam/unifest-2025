@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const NavBar = () => {
     return (
-        <nav className="bg-[rgba(0,0,0,0.7)]  flex justify-between items-center p-4 h-[5rem] w-[77.5rem] rounded-xl " >
+        <nav className="bg-[rgba(0,0,0,0.7)] z-10 flex justify-between items-center p-4 h-[5rem] w-[77.5rem] rounded-xl mt-10" >
             <div className="flex items-center">
                 <img src="\logo\logo 1-min (1) 2.png" alt="UNIFEST 2025 Logo" className="h-full w-auto mr-4 pt-1" />
             </div>
@@ -13,7 +13,7 @@ const NavBar = () => {
                         <span className="absolute inset-0 border-4 border-white border-dotted "></span>
                         <span className="relative z-10">HOME</span>
                     </a>
-                    
+
                 </li>
                 <li>
                     <a href="#" className="text-white ">EVENTS</a>
@@ -33,7 +33,7 @@ const NavBar = () => {
                     Buy Passes
                 </button>
             </div>
-            
+
         </nav>
     );
 };
