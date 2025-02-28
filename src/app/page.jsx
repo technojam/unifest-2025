@@ -1,5 +1,6 @@
 import Image from "next/image";
 import NavBar from "@/components/NavBar";
+import Orgateam from "@/components/orgateam";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <div className="w-full">
       </div>
       <NavBar />
+      <Orgateam/>
     </div>
   );
 }
