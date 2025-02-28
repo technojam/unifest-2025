@@ -9,7 +9,7 @@ import Carousel from "@/components/Artist"
 export default function Home() {
   return (
     <div
-      className="relative w-full flex flex-col w-full items-center flex-grow min-h-screen"
+      className="relative flex flex-col gap-10 w-full items-center flex-grow min-h-screen"
       style={{
         backgroundImage: "url('/bg.svg')",
         backgroundSize: "cover",
@@ -18,18 +18,20 @@ export default function Home() {
       }}>
 
       <div
-        className="absolute w-full h-[900px] bg-cover bg-center bg-no-repeat flex items-center justify-center"
+        className="absolute w-full h-[900px] bg-cover bg-center bg-no-repeat flex items-center justify-center z-10"
         style={{
           backgroundImage:
             "url('https://res.cloudinary.com/dguddaxjl/image/upload/v1740741407/media-uploads/1740741407033-sg7bzdv526.png')",
         }} />
 
+      <div className="absolute w-full h-full z-0 bg-black/10" />
+
       <NavBar />
       <Welcome />
       <AboutFest />
       <Orgateam />
-      <EventCatogories/>
-      <Carousel/>
+      <EventCatogories />
+      <Carousel />
     </div>
   );
 }

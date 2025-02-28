@@ -4,7 +4,7 @@ import Paragraph from "./Paragraph";
 
 const AboutFest = () => {
     return (
-        <div className="w-full min-h-[300px] bg-cover bg-center text-white p-8 md:p-12 mt-[-200px]  flex flex-col gap-4">
+        <div className="w-full min-h-[300px] bg-cover bg-center text-white p-8 md:p-12 mt-[-200px] z-10 flex flex-col gap-4">
             <Heading>About Galgotias Unifest</Heading>
             <Paragraph align="left">
                 UNIFEST, the annual fest of Galgotias Educational Institutions, is the ultimate celebration of talent, creativity, and cultural diversity, bringing together the most dynamic and passionate minds under one grand platform.
