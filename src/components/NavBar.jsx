@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,48 +39,46 @@ const NavBar = () => {
                     )}
                 </button>
 
-                {/* Desktop Navigation */}
+               {/* Desktop Navigation */}
                 <div className="hidden md:flex items-center justify-center flex-grow">
-                    {/* Navigation Links */}
-                    <ul className="flex space-x-6 lg:space-x-10">
+                    <ul className="flex space-x-4 sm:space-x-6 lg:space-x-10 flex-wrap justify-center">
                         {/* Home link already has the dotted border */}
                         <li>
-                            <a href="#" className="text-white relative px-4 py-3 font-medium tracking-wide transition-colors hover:text-red-300">
+                            <Link href="/" className="text-white relative px-3 sm:px-4 py-2 sm:py-3 font-medium tracking-wide transition-colors hover:text-red-300">
                                 <span className="absolute inset-0 border-2 border-white border-dotted opacity-70"></span>
                                 <span className="relative z-10">HOME</span>
-                            </a>
+                            </Link>
                         </li>
-                        {/* Update the other links with the same pattern */}
                         <li>
-                            <a href="#" className="text-white relative px-4 py-3 font-medium ">
+                            <Link href="/events" className="text-white relative px-3 sm:px-4 py-2 sm:py-3 font-medium">
                                 <span className="absolute inset-0 border-2 tracking-wide border-white border-dotted opacity-0 transition-opacity hover:opacity-20"></span>
                                 <span className="relative z-10">EVENTS</span>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" className="text-white relative px-4 py-3 font-medium ">
-                                <span className="absolute inset-0  border-2 tracking-wide border-white border-dotted opacity-0 transition-opacity hover:opacity-20"></span>
+                            <Link href="/sponsors" className="text-white relative px-3 sm:px-4 py-2 sm:py-3 font-medium">
+                                <span className="absolute inset-0 border-2 tracking-wide border-white border-dotted opacity-0 transition-opacity hover:opacity-20"></span>
                                 <span className="relative z-10">SPONSORS</span>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" className="text-white relative px-4 py-3 font-medium ">
+                            <Link href="/organisers" className="text-white relative px-3 sm:px-4 py-2 sm:py-3 font-medium whitespace-nowrap">
                                 <span className="absolute inset-0 border-2 border-white border-dotted opacity-0 transition-opacity hover:opacity-20 tracking-wide"></span>
                                 <span className="relative z-10">ORGANISING TEAM</span>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" className="text-white relative px-4 py-3 font-medium ">
+                            <Link href="/contact-us" className="text-white relative px-3 sm:px-4 py-2 sm:py-3 font-medium">
                                 <span className="absolute inset-0 border-2 border-white border-dotted opacity-0 transition-opacity hover:opacity-20 tracking-wide"></span>
                                 <span className="relative z-10">CONTACT US</span>
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
 
                 {/* Buy Passes Button - desktop */}
-                <div className="hidden md:block translate-x-1/2">
-                    <button className="bg-[#C01E0D] text-white px-5 py-2 rounded-lg shadow-[inset_1px_4px_8px_rgba(0,0,0,0.4)] hover:bg-red-700 transition-colors font-medium transform hover:scale-105 duration-200">
+                <div className="hidden md:block">
+                    <button className="bg-[#C01E0D] text-white px-4 sm:px-5 py-2 rounded-lg shadow-[inset_1px_4px_8px_rgba(0,0,0,0.4)] hover:bg-red-700 transition-colors font-medium transform hover:scale-105 duration-200">
                         Buy Passes
                     </button>
                 </div>
@@ -87,29 +86,44 @@ const NavBar = () => {
 
             {/* Mobile menu content */}
             <div
-                className={`${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} md:hidden overflow-hidden transition-all duration-300 ease-in-out absolute top-24 left-0 right-0 bg-black/80 backdrop-blur-sm p-4 rounded-b-xl z-55 mx-4`}
+                className={`
+                    ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} 
+                    md:hidden overflow-hidden transition-all duration-300 ease-in-out 
+                    absolute top-full left-0 right-0 
+                    bg-black/80 backdrop-blur-sm 
+                    p-4 rounded-b-xl 
+                    z-50 mx-auto w-[96%]
+                `}
             >
                 <ul className="flex flex-col space-y-4 pt-2">
                     <li>
-                        <a href="#" className="text-white relative px-4 py-3 block font-medium">
+                        <Link href="/" className="text-white relative px-4 py-3 block font-medium">
                             <span className="absolute inset-0 border-2 border-white border-dotted opacity-70"></span>
                             <span className="relative z-10">HOME</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className="text-white block py-2 px-4 hover:bg-white/10 rounded transition-colors">EVENTS</a>
+                        <Link href="/events" className="text-white block py-2 px-4 hover:bg-white/10 rounded transition-colors">
+                            EVENTS
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className="text-white block py-2 px-4 hover:bg-white/10 rounded transition-colors">SPONSORS</a>
+                        <Link href="/sponsors" className="text-white block py-2 px-4 hover:bg-white/10 rounded transition-colors">
+                            SPONSORS
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className="text-white block py-2 px-4 hover:bg-white/10 rounded transition-colors">ORGANISING TEAM</a>
+                        <Link href="/organisers" className="text-white block py-2 px-4 hover:bg-white/10 rounded transition-colors">
+                            ORGANISING TEAM
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className="text-white block py-2 px-4 hover:bg-white/10 rounded transition-colors">CONTACT US</a>
+                        <Link href="/contact-us" className="text-white block py-2 px-4 hover:bg-white/10 rounded transition-colors">
+                            CONTACT US
+                        </Link>
                     </li>
                 </ul>
-                <div className="mt-4 pb-2 ">
+                <div className="mt-4 pb-2">
                     <button className="bg-[#C01E0D] w-full text-white py-3 rounded-lg shadow-[inset_1px_4px_8px_rgba(0,0,0,0.4)] hover:bg-red-700 transition-colors font-medium">
                         Buy Passes
                     </button>
