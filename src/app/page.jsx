@@ -3,6 +3,8 @@ import NavBar from "@/components/NavBar";
 import Orgateam from "@/components/orgateam";
 import Welcome from "@/components/Welcome";
 import AboutFest from "@/components/AboutFest";
+import EventCatogories from "@/components/EventCatogories";
+import Carousel from "@/components/Artist"
 
 export default function Home() {
   return (
@@ -26,6 +28,8 @@ export default function Home() {
       <Welcome />
       <AboutFest />
       <Orgateam />
+      <EventCatogories/>
+      <Carousel/>
     </div>
   );
 }
