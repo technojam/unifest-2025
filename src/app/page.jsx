@@ -1,6 +1,8 @@
 import Image from "next/image";
 import NavBar from "@/components/NavBar";
 import Orgateam from "@/components/orgateam";
+import EventCatogories from "@/components/EventCatogories";
+import Carousel from "@/components/Artist";
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
       </div>
       <NavBar />
       <Orgateam/>
+      <EventCatogories/>
+      <Carousel/>
     </div>
   );
 }
