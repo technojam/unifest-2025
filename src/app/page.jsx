@@ -6,6 +6,7 @@ import EventCatogories from "@/components/EventCatogories";
 import Carousel from "@/components/Artist"
 import Timeline from "@/components/Timeline";
 
+
 export default function Home() {
   return (
     <div
