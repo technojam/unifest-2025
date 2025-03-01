@@ -21,6 +21,7 @@ export default function Home() {
       <Welcome />
       <AboutFest />
       <Orgateam />
+      <EventCatogories />
       <Carousel />
     </div>
   );
