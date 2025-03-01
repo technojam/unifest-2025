@@ -6,6 +6,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+
 @font-face {
   font-family: 'Alinore';
   src: url('/font/Alinore.otf') format('opentype');
