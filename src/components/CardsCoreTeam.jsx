@@ -65,22 +65,24 @@ const teamMembers = [
               </div>
   
               {/* Text Section */}
-              <div className="w-full md:w-1/2 p-6  ">
+              <div className="w-full md:w-1/2 p-2 bg-red-90 h-[610px]  ">
                 <h2
-                  className={`text-3xl font-bold w-[345px] mt-9 ${
+                  className={`text-4xl font-medium w-[345px] font-poppins mt-0 h-[64px] leading-[64px] tracking-[3%] uppercase ${
                     index % 2 === 0 ? "text-white" : "text-black"
                   }`}
                 >
                   {member.name}
                 </h2>
-                <p className={`text-md ${index % 2 === 0 ? "text-yellow-500" : "text-[#A50C00]"}`}>
+                <p className={`text-md font-montserrat font-medium leading-[31.7px] tracking-[-6%]  ${index % 2 === 0 ? "text-yellow-500" : "text-[#A50C00]"}`}>
                   {member.role}
                 </p>
-                <p className={`text-md ${index % 2 === 0 ? "text-yellow-500" : "text-[#A50C00]"}`}>
+                <p className={`text-md font-montserrat font-normal leading-[20.7px] tracking-[-6%] ${index % 2 === 0 ? "text-yellow-500" : "text-[#A50C00]"}`}>
                   {member.email}
                 </p>
-                <p className="text-md text-[#A50C00]">{member.phone}</p>
-                <p className={`text-md ${index % 2 === 0 ? "text-white" : "text-black"}`}>
+                <p className={`text-md font-montserrat font-normal leading-[20.7px] tracking-[-6%] ${index % 2 === 0 ? "text-yellow-500" : "text-[#A50C00]"}`}>
+                  {member.phone}
+                </p>
+                <p className={`text-md leading-[24.2px] font-light  font-poppins tracking-wide text-justify mt-5 ${index % 2 === 0 ? "text-white" : "text-black"}`}>
                   {member.description}
                 </p>
               </div>
