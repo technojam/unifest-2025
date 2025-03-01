@@ -4,6 +4,7 @@ import Welcome from "@/components/Welcome";
 import AboutFest from "@/components/AboutFest";
 import EventCatogories from "@/components/EventCatogories";
 import Carousel from "@/components/Artist"
+import Timeline from "@/components/Timeline";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Orgateam />
       <EventCatogories />
       <Carousel />
+      <Timeline/>
     </div>
   );
 }
