@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import CardsCoreTeam from "./organisers"
+import CardsCoreTeam from "./CardsCoreTeam"
 
 export default function CoreTeam() {
   const [activeTab, setActiveTab] = useState("core");
