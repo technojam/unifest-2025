@@ -20,7 +20,7 @@ const NavBar = () => {
         <nav className="bg-black/80 backdrop-blur-sm pr-4 h-16 w-[96%] max-w-7xl rounded-xl shadow-lg border border-white/10 flex items-center justify-between z-50 mt-4">
             {/* Logo */}
             <div className="flex items-center flex-shrink-0 ml-4">
-                <img src="/vercel.svg" alt="UNIFEST 2025 Logo" className="object-contain w-32 h-auto" />
+                <img src="/vercel.svg" alt="UNIFEST 2025 Logo" className="object-contain w-32 h-21" />
             </div>
 
             {/* Desktop Navigation */}
