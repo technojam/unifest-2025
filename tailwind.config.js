@@ -20,6 +20,9 @@ module.exports = {
         xl: "1rem",
         "2xl": "1.5rem",
       },
+      boxShadow: {
+        "inner-top": "inset 0px 6px 6px rgba(0, 0, 0, 0.2)", // Custom inner shadow (top only)
+      },
     },
   },
   plugins: [
