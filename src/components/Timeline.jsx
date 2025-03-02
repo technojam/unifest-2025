@@ -31,9 +31,9 @@ const Timeline = () => {
     <Heading>Event Categories</Heading>
 
     <div className="relative flex flex-col items-center pt-25 my-10 text-white w-full max-w-5xl">
-      <div id="timeline" className="relative flex flex-col items-center w-full">
+      <div id="timeline" className="relative flex flex-col items-center w-full ">
         {/* Day 1 Box */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 -top-10 bg-[#970900] text-yellow-300 px-6 py-3 font-bold text-lg text-center rounded z-10">
+        <div className="absolute left-1/2 transform -translate-x-1/2 -top-10 bg-[#970900] text-yellow-300 px-6 py-2 font-bold text-xl text-center rounded z-10 inset-shadow-sm inset-shadow-black">
           DAY 01
           <br />
           21 MARCH
@@ -79,7 +79,7 @@ const Timeline = () => {
 
         {/* Day 2 Box */}
         <div className="mt-15 flex flex-col items-center z-10 text-center">
-          <div className="bg-[#970900] text-yellow-300 px-6 py-3 font-bold text-lg rounded">
+          <div className="bg-[#970900] text-yellow-300 px-6 py-2 font-bold text-xl rounded inset-shadow-sm inset-shadow-black">
             DAY 02
             <br />
             22 MARCH
