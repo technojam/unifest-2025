@@ -28,7 +28,7 @@ const Timeline = () => {
     <div className="relative flex flex-col items-center pt-25 my-10 text-white w-full max-w-[70%]">
       <div id="timeline" className="relative flex flex-col items-center w-full max-w-4xl">
         {/* Day 1 Box */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 -top-10 bg-[#970900] text-yellow-300 px-6 py-3 font-bold text-lg text-center rounded z-10">
+        <div className="absolute left-1/2 transform -translate-x-1/2 -top-10 bg-[#970900] text-yellow-300 px-6 py-3 font-bold text-lg text-center rounded z-10 ">
           DAY 01
           <br />
           21 MARCH
@@ -49,13 +49,28 @@ const Timeline = () => {
         <div className="w-full flex flex-col md:flex-row justify-between gap-14 pt-20">
           <div className="w-1/2 space-y-5 pr-5">
             {Array.from({ length: 5 }).map((_, i) => (
-              <div key={i} className="bg-[#970900] p-4 rounded-lg">10:00 <br />DIGITAL WAR</div>
+              <div key={i} className="bg-[#970900] p-3 text-lg rounded-lg">
+                <div className="flex justify-between items-center">
+                <p>10:00</p> 
+                <button className="border px-4 text-sm">DIGITAL</button>
+                </div>
+                
+                <p>DIGITAL WAR</p>
+                
+                </div>
             ))}
           </div>
 
           <div className="w-1/2 space-y-5 pl-5">
             {Array.from({ length: 5 }).map((_, i) => (
-              <div key={i} className="bg-[#970900] p-4 rounded-lg">10:00 <br /> DIGITAL WAR</div>
+              <div key={i} className="bg-[#970900] p-3 text-lg rounded-lg"><div className="flex justify-between items-center">
+              <p>10:00</p> 
+              <button className="border px-4 text-sm">DIGITAL</button>
+              </div>
+              
+              <p>DIGITAL WAR</p>
+              
+              </div>
             ))}
           </div>
         </div>
@@ -73,13 +88,29 @@ const Timeline = () => {
         <div className="w-full flex flex-col md:flex-row justify-between gap-14 pt-15">
           <div className="w-1/2 space-y-5 pr-5">
             {Array.from({ length: 5 }).map((_, i) => (
-              <div key={i} className="bg-[#970900] p-4 rounded-lg">10:00 <br /> AI WORKSHOP</div>
+              <div key={i} className="bg-[#970900] p-3 text-lg rounded-lg">
+                <div className="flex justify-between items-center">
+              <p>10:00</p> 
+              <button className="border px-4 text-sm">DIGITAL</button>
+              </div>
+              
+              <p>DIGITAL WAR</p>
+              
+              </div>
             ))}
           </div>
 
           <div className="w-1/2 space-y-5 pl-5">
             {Array.from({ length: 5 }).map((_, i) => (
-              <div key={i} className="bg-[#970900] p-4 rounded-lg">10:00 <br /> HACKATHON</div>
+              <div key={i} className="bg-[#970900] p-3 rounded-lg">
+                <div className="flex justify-between items-center text-lg">
+                <p>10:00</p> 
+                <button className="border px-4 text-sm">DIGITAL</button>
+              </div>
+              
+              <p>DIGITAL WAR</p>
+              
+              </div>
             ))}
           </div>
         </div>
