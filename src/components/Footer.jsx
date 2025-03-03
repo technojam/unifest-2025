@@ -13,7 +13,8 @@ const Footer = () => {
 
   const credits = [
     { text: "All Rights Reserved" },
-    { text: "Designed and Developed By Team Technojam" },
+    { text: "Developed By Technojam" },
+    { text: "Designed By Graphex" },
   ];
 
   return (

@@ -12,7 +12,7 @@ export default function Home() {
     <div
       className="relative flex flex-col gap-10 w-full items-center flex-grow min-h-screen">
 
-      <div className="absolute w-full h-full z-0 bg-black/35" />
+      
       <Welcome />
       <AboutFest />
       <Orgateam />

@@ -4,6 +4,7 @@ export default function Home() {
 
   return (
     <div>
+   
       <div className=" w-full flex flex-col items-center justify-center">
         <div className="relative flex flex-col items-center h-screen justify-center">
           <h2 
