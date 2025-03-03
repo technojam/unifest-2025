@@ -87,7 +87,7 @@ const Timeline = () => {
         </div>
 
         {/* Event Sections - Day 2 */}
-        <div className="w-full flex flex-row  justify-between gap-[0.5px] lg:gap-14 px-3 lg:px-0 pt-12 lg:pt-15">
+        <div className="w-full flex flex-row  justify-between gap-[0.5px] lg:gap-14 px-3 pt-12 lg:pt-15">
           <div className="w-1/2 space-y-3 lg:space-y-5 pr-3 lg:pr-5">
             {Array.from({ length: 5 }).map((_, i) => (
               <div key={i} className="bg-[#970900] p-3 text-xs lg:text-lg rounded-lg">
