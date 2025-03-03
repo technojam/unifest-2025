@@ -33,7 +33,7 @@ const Timeline = () => {
     <div className="relative flex flex-col items-center pt-25 my-10 text-white w-full max-w-5xl">
       <div id="timeline" className="relative flex flex-col items-center w-full ">
         {/* Day 1 Box */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 -top-10 bg-[#970900] text-yellow-300 px-6 py-2 font-bold text-xl text-center rounded z-10 inset-shadow-sm inset-shadow-black">
+        <div className="absolute left-1/2 transform -translate-x-1/2 -top-5 lg:-top-10 bg-[#970900] text-yellow-300 px-6 py-2 font-bold text-sm lg:text-xl text-center rounded z-10 inset-shadow-sm inset-shadow-black">
           DAY 01
           <br />
           21 MARCH
@@ -51,25 +51,25 @@ const Timeline = () => {
         />
 
         {/* Event Sections - Day 1 */}
-        <div className="w-full flex flex-col md:flex-row justify-between gap-14 pt-20">
-          <div className="w-1/2 space-y-5 pr-5">
+        <div className="w-full flex flex-row  justify-between gap-[0.5px] lg:gap-14 px-3 lg:px-0 pt-20">
+          <div className="w-1/2 space-y-3 lg:space-y-5 pr-3 lg:pr-5">
             {Array.from({ length: 5 }).map((_, i) => (
-              <div key={i} className="bg-[#970900] p-3 text-lg rounded-lg">
+              <div key={i} className="bg-[#970900] p-3 text-xs lg:text-lg rounded-lg">
                 <div className="flex justify-between items-center">
                   <p>10:00</p>
-                  <button className="border px-4 text-sm">DIGITAL</button>
+                  <button className="border px-2 lg:px-4 text-[6px]">DIGITAL</button>
                 </div>
                 <p>DIGITAL WAR</p>
               </div>
             ))}
           </div>
 
-          <div className="w-1/2 space-y-5 pl-5">
+          <div className="w-1/2 space-y-3 lg:space-y-5 pl-3 lg:pl-5">
             {Array.from({ length: 5 }).map((_, i) => (
-              <div key={i} className="bg-[#970900] p-3 text-lg rounded-lg">
+              <div key={i} className="bg-[#970900] p-3 text-xs lg:text-lg rounded-lg">
                 <div className="flex justify-between items-center">
                   <p>10:00</p>
-                  <button className="border px-4 text-sm">DIGITAL</button>
+                  <button className="border px-2 lg:px-4 text-[6px] lg:text-sm">DIGITAL</button>
                 </div>
                 <p>DIGITAL WAR</p>
               </div>
@@ -78,8 +78,8 @@ const Timeline = () => {
         </div>
 
         {/* Day 2 Box */}
-        <div className="mt-15 flex flex-col items-center z-10 text-center">
-          <div className="bg-[#970900] text-yellow-300 px-6 py-2 font-bold text-xl rounded inset-shadow-sm inset-shadow-black">
+        <div className="mt-12  lg:mt-15 flex flex-col items-center z-10 text-center">
+          <div className="bg-[#970900] text-yellow-300 px-6 py-2 font-bold text-sm lg:text-xl rounded inset-shadow-sm inset-shadow-black">
             DAY 02
             <br />
             22 MARCH
@@ -87,25 +87,25 @@ const Timeline = () => {
         </div>
 
         {/* Event Sections - Day 2 */}
-        <div className="w-full flex flex-col md:flex-row justify-between gap-14 pt-15">
-          <div className="w-1/2 space-y-5 pr-5">
+        <div className="w-full flex flex-row  justify-between gap-[0.5px] lg:gap-14 px-3 lg:px-0 pt-12 lg:pt-15">
+          <div className="w-1/2 space-y-3 lg:space-y-5 pr-3 lg:pr-5">
             {Array.from({ length: 5 }).map((_, i) => (
-              <div key={i} className="bg-[#970900] p-3 text-lg rounded-lg">
+              <div key={i} className="bg-[#970900] p-3 text-xs lg:text-lg rounded-lg">
                 <div className="flex justify-between items-center">
-                  <p>10:00</p>
-                  <button className="border px-4 text-sm">DIGITAL</button>
+                <p>10:00</p>
+                  <button className="border px-2 lg:px-4 text-[6px] lg:text-sm">DIGITAL</button>
                 </div>
                 <p>DIGITAL WAR</p>
               </div>
             ))}
           </div>
 
-          <div className="w-1/2 space-y-5 pl-5">
+          <div className="w-1/2 space-y-3 lg:space-y-5 pl-3 lg:pl-5">
             {Array.from({ length: 5 }).map((_, i) => (
-              <div key={i} className="bg-[#970900] p-3 text-lg rounded-lg">
-                <div className="flex justify-between items-center text-lg">
-                  <p>10:00</p>
-                  <button className="border px-4 text-sm">DIGITAL</button>
+              <div key={i} className="bg-[#970900] p-3 text-xs lg:text-lg rounded-lg">
+                <div className="flex justify-between items-center">
+                <p>10:00</p>
+                  <button className="border px-2 lg:px-4 text-[6px] lg:text-sm">DIGITAL</button>
                 </div>
                 <p>DIGITAL WAR</p>
               </div>
