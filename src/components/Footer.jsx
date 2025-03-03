@@ -19,7 +19,7 @@ const Footer = () => {
 
   return (
     <footer className="w-full text-white bg-black z-10">
-      <div className="flex items-center justify-between py-10 px-20 md:flex-col lg:flex-row px-10">
+      <div className="flex items-center justify-between py-10 px-20 md:flex-col lg:flex-row">
 
         {/* Logo Section */}
         <div className="flex items-center space-x-2">
