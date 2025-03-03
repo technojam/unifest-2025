@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import React from "react";
 import { FaFacebook, FaTwitter, FaLinkedin, FaYoutube, FaInstagram, FaMapMarkerAlt } from "react-icons/fa";
@@ -38,3 +39,16 @@ const Footer = () => {
 };
 
 export default Footer;
+=======
+import React from 'react';
+
+const Footer = () => {
+  return (
+    <div>
+      footer
+    </div>
+  );
+};
+
+export default Footer;
+>>>>>>> 9da64ebf31c11518784f94d1615fa131d4003a2e
