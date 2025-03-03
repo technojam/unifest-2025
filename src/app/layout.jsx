@@ -3,7 +3,6 @@ import "./styles/globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -65,13 +64,15 @@ export default function RootLayout({ children }) {
   }}
 >
   <div
-    className="absolute w-full h-[900px] bg-cover bg-center bg-no-repeat flex items-center justify-center z-10"
+    className="absolute w-full h-[900px] bg-cover bg-center bg-no-repeat flex items-center justify-center z-20"
     style={{
       backgroundImage:
         "url('https://res.cloudinary.com/dguddaxjl/image/upload/v1740741407/media-uploads/1740741407033-sg7bzdv526.png')",
     }}
   />
+   <div className="absolute w-full h-full z-0 bg-black/35" />
   <NavBar />
+  
   {children}
   <Footer />
 </body>

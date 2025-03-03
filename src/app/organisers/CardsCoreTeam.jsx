@@ -45,7 +45,7 @@ const teamMembers = [
 
 export default function CardsCoreTeam({ activeTab }) {
   return (
-    <div className="mt-[100vh]">
+    <div className="flex flex-col">
       {activeTab === "core" &&
       Array.isArray(teamMembers) &&
       teamMembers.length > 0

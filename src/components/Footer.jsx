@@ -1,38 +1,60 @@
-
 import React from "react";
 import { FaFacebook, FaTwitter, FaLinkedin, FaYoutube, FaInstagram, FaMapMarkerAlt } from "react-icons/fa";
 
-
 const Footer = () => {
+
+  const socialLinks = [
+    { icon: <FaFacebook />, href: "#" },
+    { icon: <FaTwitter />, href: "#" },
+    { icon: <FaLinkedin />, href: "#" },
+    { icon: <FaYoutube />, href: "#" },
+    { icon: <FaInstagram />, href: "#" },
+  ];
+
+  const credits = [
+    { text: "All Rights Reserved" },
+    { text: "Developed By Technojam" },
+    { text: "Designed By Graphex" },
+  ];
+
   return (
-    <footer className="w-full bg-black text-white py-6 h-96">
-      <div className="max-w-screen-xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
-        
+    <footer className="w-full text-white bg-black z-10">
+      <div className="flex items-center justify-between py-10 px-20 md:flex-col lg:flex-row">
+
         {/* Logo Section */}
         <div className="flex items-center space-x-2">
-          <img src="vercel.svg" alt="Unifest 2025 Logo" className="h-16" />
+          <img src="vercel.svg" alt="Unifest 2025 Logo" className="w-70 h-70" />
         </div>
 
         {/* Address Section */}
-        <div className="text-center md:text-left mt-4 md:mt-0 max-w-md">
-          <p className="text-gray-400 flex items-start md:items-center">
-            <FaMapMarkerAlt className="mr-2 mt-1" />
-            Plot No. 2, Yamuna Expy, opposite Buddha International Circuit,<br />
-            Sector 17A, Greater Noida, Uttar Pradesh 203201
-          </p>
-        </div>
+        <div className="flex flex-col gap-10 md:w-[100%]">
+          <div className="flex text-center md:flex-col lg:flex-row items-center justify-center space-y-5">
+            <FaMapMarkerAlt className="w-10 h-10 mr-2 mt-2" />
+            <p className="lg:text-left text-gray-400 md:text-center">
+              Plot No. 2, Yamuna Expy, opposite Buddha International Circuit,<br />
+              Sector 17A, Greater Noida, Uttar Pradesh 203201
+            </p>
+          </div>
 
-        {/* Social Media Section */}
-        <div className="flex space-x-4 mt-4 md:mt-0">
-          <a href="#" className="text-gray-400 hover:text-white text-xl"><FaFacebook /></a>
-          <a href="#" className="text-gray-400 hover:text-white text-xl"><FaTwitter /></a>
-          <a href="#" className="text-gray-400 hover:text-white text-xl"><FaLinkedin /></a>
-          <a href="#" className="text-gray-400 hover:text-white text-xl"><FaYoutube /></a>
-          <a href="#" className="text-gray-400 hover:text-white text-xl"><FaInstagram /></a>
+          {/* Social Media Section */}
+          <div className="flex justify-evenly space-x-4 md:space-x-2">
+            {socialLinks.map((link, index) => (
+              <a key={index} href={link.href} className="text-gray-400 hover:text-white text-3xl">
+                {link.icon}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
 
-     
+      <div className="flex items-center justify-between py-4 px-20 border-t border-gray-800 md:px-10">
+        {credits.map((credit, index) => (
+          <div className="flex text-gray-400" key={index}>
+            {credit.text}
+          </div>
+        ))}
+      </div>
+
     </footer>
   );
 };
