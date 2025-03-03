@@ -57,7 +57,7 @@ const Timeline = () => {
               <div key={i} className="bg-[#970900] p-3 text-xs lg:text-lg rounded-lg">
                 <div className="flex justify-between items-center">
                   <p>10:00</p>
-                  <button className="border px-2 lg:px-4 text-[6px]">DIGITAL</button>
+                  <button className="border px-2 lg:px-4 text-[6px] lg:text-sm">DIGITAL</button>
                 </div>
                 <p>DIGITAL WAR</p>
               </div>
