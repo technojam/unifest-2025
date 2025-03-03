@@ -1,28 +1,17 @@
-import NavBar from "@/components/NavBar";
+import Heading from "@/components/Heading";
 export default function Home() {
   const sponsors = new Array(18).fill("/Frame 22.png");
 
   return (
     <div>
-      <div className=" w-full flex flex-col items-center justify-center bg-no-repeat bg-center bg-cover">
-        <div className="relative flex flex-col items-center">
-          {/* Black Shadow */}
-          <h1
-            className="absolute right-1 w-full text-center font-alinore text-[11rem] font-extrabold uppercase tracking-wide text-black md:top-[300px] md:text-[11rem] md:right-1.5 lg:left-4.5 lg:top-[350px] lg:text-[13rem]"
-            style={{ zIndex: 0 }}
-          >
+      <div className=" w-full flex flex-col items-center justify-center">
+        <div className="relative flex flex-col items-center h-screen justify-center">
+          <h2 
+          className=" font-[Alinore] headingbg font-bold text-center uppercase tracking-wider drop-shadow-[-6px_-2px_0px_black] text-9xl ">
             OUR SPONSORS
-          </h1>
+          </h2>
 
-          {/* Main Text */}
-          <h1
-            className="relative w-full bg-gradient-to-b from-[#FFD700] via-[#D69924] to-[#8B5A2B] bg-clip-text text-center font-alinore text-[10rem] font-medium uppercase tracking-wide text-transparent md:top-[300px] md:text-[11rem] lg:left-6 lg:top-[350px] lg:text-[13rem]"
-            style={{ zIndex: 1 }}
-          >
-            OUR SPONSORS
-          </h1>
-
-          <p className=" font-[] md:mt-[270px] lg:mt-[300px] w-full flex items-center justify-center max-w-3xl text-center text-lg font-semibold text-[#FFC93C] md:text-2xl lg:text-2xl">
+          <p className=" font-poppins w-full flex items-center justify-center max-w-4xl text-center text-lg font-semibold text-[#E3ED7B] md:text-2xl lg:text-2xl">
             Meet the amazing partners who help make Uphoria possible. Their
             support drives our passion for creating unforgettable experiences.
           </p>

@@ -43,23 +43,21 @@ const teamMembers = [
   },
 ];
 
-
-
 export default function CardsCoreTeam({ activeTab }) {
   return (
-    <div className="space-y-10 p-10 mt-[100vh] ">
+    <div className="mt-[100vh]">
       {activeTab === "core" &&
       Array.isArray(teamMembers) &&
       teamMembers.length > 0
         ? teamMembers.map((member, index) => (
             <div
-              key={index}
-              className={`flex flex-col md:flex-row items-center min-h-screen   mt-9 ${
-                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-              } p-6 rounded-lg shadow-lg w-full`}
+              key={member.name}
+              className={`flex flex-col md:flex-row items-center min-h-screen ${
+                index % 2 === 0 ? "md:flex-row bg-[url('/bgyellow.webp')]" : "md:flex-row bg-[url('/bgred.webp')]"
+              } p-6 w-full bg-cover bg-center bg-no-repeat`}
             >
               {/* Image Section */}
-              <div className="w-full md:w-1/2 flex justify-center ">
+              <div className="w-full md:w-1/2 flex justify-center">
                 <img
                   src={member.image}
                   alt={member.name}
@@ -68,38 +66,38 @@ export default function CardsCoreTeam({ activeTab }) {
               </div>
 
               {/* Text Section */}
-              <div className="w-full md:w-1/2 p-2 bg-red-90 h-[610px]  ">
+              <div className="w-full md:w-1/2 p-2 h-[610px]">
                 <h2
                   className={`text-4xl font-medium w-[345px] font-poppins mt-0 h-[64px] leading-[64px] tracking-[3%] uppercase ${
-                    index % 2 === 0 ? "text-white" : "text-black"
+                    index % 2 === 0 ? "text-[#CC200E]" : "text-white"
                   }`}
                 >
                   {member.name}
                 </h2>
                 <p
-                  className={`text-md font-montserrat font-medium leading-[31.7px] tracking-[-6%]  ${
-                    index % 2 === 0 ? "text-yellow-500" : "text-[#A50C00]"
+                  className={`text-md font-montserrat font-medium leading-[31.7px] tracking-[-6%] ${
+                    index % 2 === 0 ? "text-[#CC200E]" : "text-yellow-500"
                   }`}
                 >
                   {member.role}
                 </p>
                 <p
                   className={`text-md font-montserrat font-normal leading-[20.7px] tracking-[-6%] ${
-                    index % 2 === 0 ? "text-yellow-500" : "text-[#A50C00]"
+                    index % 2 === 0 ? "text-[#CC200E]" : "text-yellow-500"
                   }`}
                 >
                   {member.email}
                 </p>
                 <p
                   className={`text-md font-montserrat font-normal leading-[20.7px] tracking-[-6%] ${
-                    index % 2 === 0 ? "text-yellow-500" : "text-[#A50C00]"
+                    index % 2 === 0 ? "text-[#CC200E]" : "text-yellow-500"
                   }`}
                 >
                   {member.phone}
                 </p>
                 <p
-                  className={`text-md leading-[24.2px] font-light  font-poppins tracking-wide text-justify mt-5 ${
-                    index % 2 === 0 ? "text-white" : "text-black"
+                  className={`text-md leading-[24.2px] font-light font-poppins tracking-wide text-justify mt-5 ${
+                    index % 2 === 0 ? "text-[#CC200E]" : "text-white"
                   }`}
                 >
                   {member.description}
