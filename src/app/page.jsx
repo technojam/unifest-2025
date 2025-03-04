@@ -1,5 +1,5 @@
 
-import Orgateam from "@/components/orgateam";
+import Orgateam from "@/components/Orgateam";
 import Welcome from "@/components/Welcome";
 import AboutFest from "@/components/AboutFest";
 import EventCatogories from "@/components/EventCatogories";
