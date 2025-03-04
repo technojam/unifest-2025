@@ -9,7 +9,7 @@ export default function CoreTeam() {
   return (
     <div className="flex flex-col items-center w-full relative min-h-screen ">
       {/* Background Image */}
-      <div className="absolute top-0 left-0 right-0 h-screen overflow-hidden pointer-events-none ">
+      <div className="absolute top-0 left-0 right-0 h-screen overflow-hidden pointer-events-none border-[5px] border-[#E5B73B] shadow-[0_20px_40px_rgba(229,183,59,0.7)]">
         <Image
           src="/bgyellow.webp"
           fill={true}
@@ -21,7 +21,7 @@ export default function CoreTeam() {
       </div>
 
       {/* Heading Section */}
-      <div className="w-full flex flex-col items-center pt-[20vh] pb-[30vh] md:pt-[30vh] lg:pt-[390px] ">
+      <div className="w-full flex flex-col items-center pt-[20vh] pb-[3vh] md:pt-[30vh] lg:pt-[390px] ">
         <h2 className="font-[Alinore] text-[#CC200E] font-bold text-center uppercase tracking-wider drop-shadow-[-6px_-2px_0px_black] text-4xl sm:text-5xl md:text-6xl lg:text-8xl px-4 ">
           ORGANISING TEAM
         </h2>
@@ -54,7 +54,7 @@ export default function CoreTeam() {
       </div>
 
       {/* Cards Section */}
-      <div className="w-full z-10 ">
+      <div className="w-full z-10 mt-41 ">
         <CardsCoreTeam activeTab={activeTab} />
       </div>
     </div>
