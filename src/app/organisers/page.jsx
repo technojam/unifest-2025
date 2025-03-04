@@ -35,9 +35,8 @@ export default function CoreTeam() {
                 : "bg-[#E5B73B] text-black"
             }`}
             onClick={() => {
-    
-    setActiveTab("core");
-  }}
+              setActiveTab("core");
+            }}
           >
             CORE TEAM
           </button>
