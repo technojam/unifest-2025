@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import CardsCoreTeam from "../../components/ui/CardsCoreTeam";
+import CardsClubHeads from "../../components/ui/CardsClubHeads"
 import Image from "next/image";
 
 export default function CoreTeam() {
@@ -9,7 +10,7 @@ export default function CoreTeam() {
   return (
     <div className="flex flex-col items-center w-full relative min-h-screen ">
       {/* Background Image */}
-      <div className="absolute top-0 left-0 right-0 h-screen overflow-hidden pointer-events-none border-[5px] border-[#E5B73B] shadow-[0_20px_40px_rgba(229,183,59,0.7)]">
+      <div className="absolute top-0 left-0 right-0 h-screen overflow-hidden pointer-events-none z-0">
         <Image
           src="/bgyellow.webp"
           fill={true}
@@ -56,7 +57,9 @@ export default function CoreTeam() {
       {/* Cards Section */}
       <div className="w-full z-10 mt-41 ">
         <CardsCoreTeam activeTab={activeTab} />
+        <CardsClubHeads activeTab={activeTab} />
       </div>
+
     </div>
   );
 }

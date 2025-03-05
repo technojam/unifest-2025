@@ -47,7 +47,7 @@ export default function CardsCoreTeam({ activeTab }) {
   if (activeTab !== "core" || !Array.isArray(teamMembers) || teamMembers.length === 0) return null;
 
   return (
-    <div className="mt-[100vh]">
+    <div >
       {teamMembers.map((member, index) => {
         const isEven = index % 2 === 0;
         const textColor = isEven ? "text-[#CC200E]" : "text-yellow-500";
