@@ -1,7 +1,7 @@
 import React from "react";
 import "../app/styles/orgateam.css";
-import Heading from "./Heading";
-import Paragraph from "./Paragraph";
+import Heading from "./ui/Heading";
+import Paragraph from "./ui/Paragraph";
 
 const Orgateam = () => {
   return (
