@@ -20,7 +20,8 @@ const Paragraph = ({ children, color = "white", align = "center", size = "lg", c
     className={clsx(
       "w-full sm:w-[85%] md:w-[75%] mx-auto", // layout & sizing
       "mt-6 mb-4", // Spacing
-      "font-poppins font-light text-white leading-relaxed", // typography
+
+      "font-poppins font-light text-[#E3ED7B] leading-relaxed", // typography
       "drop-shadow-[-2px_0px_2px_black]", // effects
       sizeClasses[size], // dynamic size
       alignClasses[align], // dynamic alignment
