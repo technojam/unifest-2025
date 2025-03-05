@@ -44,70 +44,47 @@ const teamMembers = [
 ];
 
 export default function CardsCoreTeam({ activeTab }) {
-  return (
-    <div className="flex flex-col">
-      {activeTab === "core" &&
-      Array.isArray(teamMembers) &&
-      teamMembers.length > 0
-        ? teamMembers.map((member, index) => (
-            <div
-              key={index}
-              className={`flex flex-col md:flex-row items-center min-h-screen  ${
-                index % 2 === 0
-                  ? "md:flex-row  bg-[url('/bgyellow.webp')]"
-                  : "md:flex-row-reverse bg-[url('/bgred.webp')]"
-              } p-6 w-full bg-cover bg-center bg-no-repeat`}
-            >
-              {/* Image Section */}
-              <div className="w-full md:w-1/2 flex justify-center">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full sm:w-[530px] h-auto sm:h-[610px] object-cover rounded-lg"
-                />
-              </div>
+  if (activeTab !== "core" || !Array.isArray(teamMembers) || teamMembers.length === 0) return null;
 
-              {/* Text Section */}
-              <div className="w-full md:w-1/2 p-2 h-auto sm:h-[610px]">
-                <h2
-                  className={`text-4xl font-medium w-full sm:w-[345px] font-poppins mt-0 h-auto sm:h-[64px] leading-[64px] tracking-[3%] uppercase ${
-                    index % 2 === 0 ? "text-black" : "text-white"
-                  }`}
-                >
-                  {member.name}
-                </h2>
-                <p
-                  className={`text-md font-montserrat font-medium leading-[31.8px] tracking-[-6%] ${
-                    index % 2 === 0 ? "text-[#A50C00]" : "text-[#FFF893]"
-                  }`}
-                >
-                  {member.role}
-                </p>
-                <p
-                  className={`text-md font-montserrat font-normal leading-[20.7px] tracking-[-6%] ${
-                    index % 2 === 0 ? "text-[#A50C00]" : "text-[#FFF893]"
-                  }`}
-                >
-                  {member.email}
-                </p>
-                <p
-                  className={`text-md font-montserrat font-normal leading-[20.7px] tracking-[-6%] ${
-                    index % 2 === 0 ? "text-[#A50C00]" : "text-[#FFF893]"
-                  }`}
-                >
-                  {member.phone}
-                </p>
-                <p
-                  className={`text-md w-[90%] leading-[24.2px] font-light font-poppins tracking-wide text-justify mt-5 ${
-                    index % 2 === 0 ? "text-black" : "text-white"
-                  }`}
-                >
-                  {member.description}
-                </p>
-              </div>
+  return (
+    <div className="mt-[100vh]">
+      {teamMembers.map((member, index) => {
+        const isEven = index % 2 === 0;
+        const textColor = isEven ? "text-[#CC200E]" : "text-yellow-500";
+        const bgColor = isEven ? "bg-[url('/bgyellow.webp')]" : "bg-[url('/bgred.webp')]";
+
+        return (
+          <div
+            key={member.name}
+            className={`flex flex-col md:flex-row ${isEven ? "md:flex-row" : "md:flex-row-reverse"} 
+                        items-center min-h-screen ${bgColor} p-6 w-full bg-cover bg-center bg-no-repeat`}
+          >
+            {/* Image Section */}
+            <div className="w-full md:w-1/2 flex justify-center">
+              <img
+                src={member.image}
+                alt={member.name}
+                className="w-[90%] md:w-[530px] h-auto max-h-[610px] object-cover rounded-lg"
+              />
             </div>
-          ))
-        : null}
+
+            {/* Text Section */}
+            <div className="w-full md:w-1/2 p-4 min-h-[500px] flex flex-col justify-center">
+              <h2 className={`text-3xl md:text-4xl font-semibold font-poppins tracking-wide uppercase ${textColor}`}>
+                {member.name}
+              </h2>
+              <p className={`text-lg md:text-xl font-montserrat font-medium ${textColor}`}>
+                {member.role}
+              </p>
+              <p className="text-md font-montserrat font-normal text-white">{member.email}</p>
+              <p className="text-md font-montserrat font-normal text-white">{member.phone}</p>
+              <p className="text-md leading-relaxed font-light font-poppins text-justify mt-4 text-white">
+                {member.description}
+              </p>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }

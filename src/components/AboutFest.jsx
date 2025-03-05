@@ -1,11 +1,11 @@
 import React from "react";
-import Heading from "./Heading";
-import Paragraph from "./Paragraph";
+import Heading from "./ui/Heading";
+import Paragraph from "./ui/Paragraph";
 
 const AboutFest = () => {
   return (
-    <div className="w-full min-h-[300px] bg-cover bg-center text-white p-8 md:p-12 mt-[-200px] z-10 flex flex-col gap-4">
-      <Heading>About Galgotias Unifest</Heading>
+    <div className="w-full min-h-[300px] bg-cover bg-center text-white p-8 md: p-12 mt-[-200px] z-10 flex flex-col gap-4">
+      <Heading >About Galgotias Unifest</Heading>
       <Paragraph align="left" >
         UNIFEST, the annual fest of Galgotias Educational Institutions, is the
         ultimate celebration of talent, creativity, and cultural diversity,
