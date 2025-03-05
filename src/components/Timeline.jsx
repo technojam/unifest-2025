@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Heading from "./Heading";
+import Heading from "./ui/Heading";
 
 const Timeline = () => {
   const [lineHeight, setLineHeight] = useState(0);
