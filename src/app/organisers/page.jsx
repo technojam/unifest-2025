@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import CardsCoreTeam from "./CardsCoreTeam";
+import CardsCoreTeam from "../../components/ui/CardsCoreTeam";
 import Image from "next/image";
 
 export default function CoreTeam() {

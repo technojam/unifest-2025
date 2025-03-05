@@ -1,4 +1,4 @@
-import Heading from "@/components/Heading";
+import Heading from "@/components/ui/Heading";
 export default function Home() {
   const sponsors = new Array(18).fill("/Frame 22.png");
 
