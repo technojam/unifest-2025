@@ -1,7 +1,7 @@
 // import { useState } from "react";
 "use client";
 import { useState } from "react";
-import Heading from "./Heading";
+import Heading from "./ui/Heading";
 
 const images = [
   "Frame 22.png",
