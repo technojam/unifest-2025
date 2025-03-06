@@ -1,4 +1,5 @@
-import Heading from "@/components/Heading";
+import Heading from "@/components/ui/Heading";
+import Paragraph from "@/components/ui/Paragraph";
 export default function Home() {
   const sponsors = new Array(18).fill("/Frame 22.png");
 
@@ -7,15 +8,11 @@ export default function Home() {
    
       <div className=" w-full flex flex-col items-center justify-center">
         <div className="relative flex flex-col items-center h-screen justify-center">
-          <h2 
-          className=" font-[Alinore] headingbg font-bold text-center uppercase tracking-wider drop-shadow-[-6px_-2px_0px_black] text-9xl ">
-            OUR SPONSORS
-          </h2>
-
-          <p className=" font-poppins w-full flex items-center justify-center max-w-4xl text-center text-lg font-semibold text-[#E3ED7B] md:text-2xl lg:text-2xl">
+          <Heading>OUR SPONSORS</Heading>
+          <Paragraph className={"text-[#E3ED7B]"}>
             Meet the amazing partners who help make Uphoria possible. Their
             support drives our passion for creating unforgettable experiences.
-          </p>
+          </Paragraph>
         </div>
 
         <div className="flex flex-col items-center w-full">
