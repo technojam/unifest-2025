@@ -66,7 +66,6 @@ export default function CardsCoreTeam({ activeTab }) {
                   className="w-full sm:w-[530px] h-auto sm:h-[610px] object-cover rounded-lg"
                 />
               </div>
-
               {/* Text Section */}
               <div className="w-full md:w-1/2 p-2 h-auto sm:h-[610px]">
                 <h2
