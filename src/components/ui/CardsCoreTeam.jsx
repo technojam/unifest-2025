@@ -1,3 +1,7 @@
+import React, { useState, useEffect } from "react";
+
+const MAX_WORDS = 30; 
+
 const teamMembers = [
   {
     name: "Adil Ali Khan",
@@ -47,44 +51,67 @@ export default function CardsCoreTeam({ activeTab }) {
   if (activeTab !== "core" || !Array.isArray(teamMembers) || teamMembers.length === 0) return null;
 
   return (
-    <div >
+    <div>
       {teamMembers.map((member, index) => {
         const isEven = index % 2 === 0;
-        const textColor = isEven ? "text-[#CC200E]" : "text-yellow-500";
+        const textColor = isEven ? "text-black" : "text-white";
         const bgColor = isEven ? "bg-[url('/bgyellow.webp')]" : "bg-[url('/bgred.webp')]";
 
-        return (
-          <div
-            key={member.name}
-            className={`flex flex-col md:flex-row ${isEven ? "md:flex-row" : "md:flex-row-reverse"} 
-                        items-center min-h-screen ${bgColor} p-6 w-full bg-cover bg-center bg-no-repeat`}
-          >
-            {/* Image Section */}
-            <div className="w-full md:w-1/2 flex justify-center">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-[90%] md:w-[530px] h-auto max-h-[610px] object-cover rounded-lg"
-              />
-            </div>
-
-            {/* Text Section */}
-            <div className="w-full md:w-1/2 p-4 min-h-[500px] flex flex-col justify-center">
-              <h2 className={`text-3xl md:text-4xl font-semibold font-poppins tracking-wide uppercase ${textColor}`}>
-                {member.name}
-              </h2>
-              <p className={`text-lg md:text-xl font-montserrat font-medium ${textColor}`}>
-                {member.role}
-              </p>
-              <p className="text-md font-montserrat font-normal text-white">{member.email}</p>
-              <p className="text-md font-montserrat font-normal text-white">{member.phone}</p>
-              <p className="text-md leading-relaxed font-light font-poppins text-justify mt-4 text-white">
-                {member.description}
-              </p>
-            </div>
-          </div>
-        );
+        return <TeamCard key={member.name} member={member} bgColor={bgColor} textColor={textColor} isEven={isEven} />;
       })}
     </div>
   );
 }
+
+function TeamCard({ member, bgColor, textColor, isEven }) {
+  const [isMobile, setIsMobile] = useState(false);
+  const [showFullText, setShowFullText] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => setIsMobile(window.innerWidth < 640);
+    checkScreenSize(); // Initial check
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  const words = member.description.split(" ");
+  const truncatedDescription = words.slice(0, MAX_WORDS).join(" ") + "...";
+
+  return (
+    <div className={`flex flex-col md:flex-row ${isEven ? "md:flex-row" : "md:flex-row-reverse"} 
+                    items-center min-h-screen ${bgColor} p-6 w-full bg-cover bg-center bg-no-repeat`}>
+      
+      {/* Image Section */}
+      <div className="w-full md:w-1/2 flex justify-center">
+        <img
+          src={member.image}
+          alt={member.name}
+          className="w-[90%] md:w-[530px] h-auto max-h-[610px] object-cover rounded-lg"
+        />
+      </div>
+
+      {/* Text Section */}
+      <div className="w-full md:w-1/2 p-4 min-h-[500px] flex flex-col justify-center">
+        <h2 className={`text-3xl md:text-4xl font-semibold font-poppins tracking-wide uppercase ${textColor}`}>
+          {member.name}
+        </h2>
+        <p className={`text-lg md:text-xl font-montserrat font-medium ${textColor}`}>
+          {member.role}
+        </p>
+        <p className={`text-md font-montserrat font-normal ${textColor}`}>{member.email}</p>
+        <p className={`text-md font-montserrat font-normal ${textColor} `}>{member.phone}</p>
+        
+        {/* Description with Read More */}
+        <p className={`text-md leading-relaxed font-light font-poppins text-justify mt-4 ${textColor} `}>
+          {isMobile && !showFullText ? truncatedDescription : member.description}
+        </p>
+        {isMobile && words.length > MAX_WORDS && (
+          <button onClick={() => setShowFullText(!showFullText)} className="text-blue-500 font-semibold mt-2">
+            {showFullText ? "Read Less" : "Read More"}
+          </button>
+        )}
+      </div>
+    </div>
+  );
+}
+

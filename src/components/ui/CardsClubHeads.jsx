@@ -1,3 +1,6 @@
+import React, { useState, useEffect } from "react";
+const MAX_WORDS = 30; 
+
 const teamMembers = [
   {
     graphexLogo: "/graphex-logo.png",
@@ -81,15 +84,10 @@ const teamMembers = [
 ];
 
 export default function CardsClubHeads({ activeTab }) {
-  if (
-    activeTab !== "club" ||
-    !Array.isArray(teamMembers) ||
-    teamMembers.length === 0
-  )
-    return null;
+  if (activeTab !== "club") return null;
 
   return (
-    <div >
+    <div>
       {teamMembers.map((member, index) => {
         const isEven = index % 2 === 0;
         const textColor = isEven ? "text-black" : "text-white";
@@ -97,77 +95,73 @@ export default function CardsClubHeads({ activeTab }) {
           ? "bg-[url('/bgyellow.webp')]"
           : "bg-[url('/bgred.webp')]";
 
+        return <TeamCard key={member.title} member={member} bgColor={bgColor} textColor={textColor} />;
+      })}
+    </div>
+  );
+}
 
-        return (
-          <div
-            key={member.title}
-            className={`relative flex flex-col items-center justify-center min-h-screen ${bgColor} p-6 w-full bg-cover bg-center bg-no-repeat`}
-          >
-            {/* Top Section - Logo, Title, Head Images */}
-            <div className="w-full max-w-6xl flex justify-between items-start relative">
-              {/* Graphex Logo (Top Left) */}
-              <img
-                src={member.graphexLogo}
-                alt="Graphex Logo"
-                className="w-40 h-auto"
-              />
+function TeamCard({ member, bgColor, textColor }) {
+  const [isMobile, setIsMobile] = useState(false);
+  const [showFullText, setShowFullText] = useState(false);
 
-              {/* Title (Centered) */}
-              <h2
-                className={`absolute left-1/2 transform -translate-x-1/2 text-3xl md:text-4xl font-semibold uppercase ${textColor}`}
-              >
-                {member.title}
-              </h2>
+  useEffect(() => {
+    const checkScreenSize = () => setIsMobile(window.innerWidth < 640);
+    checkScreenSize(); // Check on first load
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
 
-              {/* Head Images & Head Title (Top Right) */}
-              <div className="flex flex-col items-center">
-                <h3 className={`text-lg md:text-xl font-semibold ${textColor}`}>
-                  {member.headTitle}
-                </h3>
-                <div className="flex gap-4 mt-1">
-                  <div className="text-center">
-                    <img
-                      src={member.headImage1}
-                      alt="Head 1"
-                      className="w-16 h-16"
-                    />
-                    <p className={`${textColor} mt-2`}>{member.headName1}</p>
-                  </div>
-                  <div className="text-center">
-                    <img
-                      src={member.headImage2}
-                      alt="Head 2"
-                      className="w-16 h-16 "
-                    />
-                    <p className={`${textColor} mt-2`}>{member.headName2}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+  const words = member.description.split(" ");
+  const truncatedDescription = words.slice(0, MAX_WORDS).join(" ") + "...";
 
-            {/* Content Section - Description & Club Image */}
-            <div className="w-full max-w-6xl grid md:grid-cols-2 gap-10 items-center mt-10">
-              {/* Description (Left Side) */}
-              <div className="text-center md:text-left">
-                <p
-                  className={`text-md leading-relaxed text-lg font-light ${textColor}`}
-                >
-                  {member.description}
+  return (
+    <div className={`relative flex flex-col items-center justify-center min-h-screen ${bgColor} p-6 w-full bg-cover bg-center bg-no-repeat`}>
+      {/* Top Section */}
+      <div className="w-full max-w-6xl flex flex-col sm:flex-row justify-between items-center sm:items-start relative">
+        {/* Graphex Logo */}
+        <img src={member.graphexLogo} alt="Graphex Logo" className="w-32 sm:w-40 h-auto mb-4 sm:mb-0" />
+
+        {/* Title */}
+        <h2 className={`text-2xl sm:text-3xl md:text-4xl font-semibold uppercase ${textColor} text-center sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2`}>
+          {member.title}
+        </h2>
+
+        {/* Head Images */}
+        <div className="flex flex-col items-center mt-4 sm:mt-0">
+          <h3 className={`text-md sm:text-lg md:text-xl font-semibold ${textColor}`}>{member.headTitle}</h3>
+          <div className="flex gap-2 sm:gap-4 mt-2">
+            {[member.headImage1, member.headImage2].map((image, idx) => (
+              <div key={idx} className="text-center">
+                <img src={image} alt={`Head ${idx + 1}`} className="w-14 sm:w-16 h-auto rounded-full" />
+                <p className={`${textColor} mt-2 text-sm sm:text-base`}>
+                  {idx === 0 ? member.headName1 : member.headName2}
                 </p>
               </div>
-
-              {/* Club Image (Right Side) */}
-              <div className="flex justify-center">
-                <img
-                  src={member.image}
-                  alt={member.title}
-                  className="w-[90%] md:w-[500px] h-auto object-cover rounded-lg shadow-lg"
-                />
-              </div>
-            </div>
+            ))}
           </div>
-        );
-      })}
+        </div>
+      </div>
+
+      {/* Content Section */}
+      <div className="w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 gap-10 items-center mt-10 px-4 sm:px-0">
+        {/* Club Image */}
+        <div className="flex justify-center order-1 sm:order-none">
+          <img src={member.image} alt={member.title} className="w-full max-w-xs sm:max-w-md h-auto object-cover rounded-lg shadow-lg" />
+        </div>
+
+        {/* Description */}
+        <div className="text-center sm:text-left order-2 sm:order-none">
+          <p className={`text-md leading-relaxed text-lg font-light ${textColor}`}>
+            {isMobile && !showFullText ? truncatedDescription : member.description}
+          </p>
+          {isMobile && words.length > MAX_WORDS && (
+            <button onClick={() => setShowFullText(!showFullText)} className="text-blue-900 font-semibold mt-2">
+              {showFullText ? "Read Less" : "Read More"}
+            </button>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
