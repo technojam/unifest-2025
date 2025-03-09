@@ -4,11 +4,11 @@ import { FaFacebook, FaTwitter, FaLinkedin, FaYoutube, FaInstagram, FaMapMarkerA
 const Footer = () => {
 
   const socialLinks = [
-    { icon: <FaFacebook />, href: "#" },
-    { icon: <FaTwitter />, href: "#" },
-    { icon: <FaLinkedin />, href: "#" },
-    { icon: <FaYoutube />, href: "#" },
-    { icon: <FaInstagram />, href: "#" },
+    { icon: <FaFacebook />, href: "https://www.facebook.com/galgotiasstudentcouncil/" },
+    { icon: <FaTwitter />, href: "https://x.com/gucouncil" },
+    { icon: <FaLinkedin />, href: "https://www.linkedin.com/company/gusc" },
+    { icon: <FaYoutube />, href: "https://www.youtube.com/@guscyoutube" },
+    { icon: <FaInstagram />, href: "https://www.instagram.com/galgotiasstudentcouncil/" },
   ];
 
   const credits = [

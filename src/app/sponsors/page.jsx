@@ -5,19 +5,18 @@ export default function Home() {
 
   return (
     <div>
-   
       <div className=" w-full flex flex-col items-center justify-center">
         <div className="relative flex flex-col items-center h-screen justify-center">
-          <Heading>OUR SPONSORS</Heading>
-          <Paragraph className={"text-[#E3ED7B]"}>
+          <Heading className={"text-6xl"}>OUR SPONSORS</Heading>
+          <Paragraph color="#E3ED7B]">
             Meet the amazing partners who help make Uphoria possible. Their
             support drives our passion for creating unforgettable experiences.
           </Paragraph>
         </div>
-
+ <Paragraph color="#E3ED7B]">Coming Soon</Paragraph>
         <div className="flex flex-col items-center w-full">
           <div className="mt-30 grid grid-cols-1 gap-6 px-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:gap-12">
-            {sponsors.map((src, index) => (
+            {/* {sponsors.map((src, index) => (
               <div key={index} className="flex justify-center">
                 <img
                   src={src}
@@ -25,7 +24,8 @@ export default function Home() {
                   className="w-[364px] h-[364px] object-contain pb-12"
                 />
               </div>
-            ))}
+            ))} */}
+           
           </div>
         </div>
       </div>
