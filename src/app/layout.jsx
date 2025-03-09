@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./styles/globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-
+import { Toaster } from "sonner";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -64,7 +64,7 @@ export default function RootLayout({ children }) {
   }}
 >
   <div
-    className="absolute w-full h-[900px] bg-cover bg-center bg-no-repeat flex items-center justify-center z-20"
+    className="absolute pointer-events-none w-full h-[900px] bg-cover bg-center bg-no-repeat flex items-center justify-center z-20"
     style={{
       backgroundImage:
         "url('https://res.cloudinary.com/dguddaxjl/image/upload/v1740741407/media-uploads/1740741407033-sg7bzdv526.png')",
@@ -75,6 +75,7 @@ export default function RootLayout({ children }) {
   
   {children}
   <Footer />
+  <Toaster />
 </body>
     </html>
   );

@@ -5,6 +5,7 @@ import AboutFest from "@/components/AboutFest";
 import EventCatogories from "@/components/EventCatogories";
 import Carousel from "@/components/Artist"
 import Timeline from "@/components/Timeline";
+import Orgateam from "@/components/orgateam";
 
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
       
       <Welcome />
       <AboutFest />
-      <Orgateam />
+      <Orgateam/>
       <EventCatogories />
       <Carousel />
       <Timeline/>
