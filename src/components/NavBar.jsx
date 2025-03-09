@@ -14,7 +14,7 @@ const navLinks = [
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const pathname = usePathname();
+    const pathname =  usePathname();
 
     return (
         <nav className="bg-black/80 backdrop-blur-sm px-4 h-16 w-[96%] max-w-7xl mx-auto rounded-xl shadow-lg border border-white/10 flex items-center justify-between z-50 mt-4">
