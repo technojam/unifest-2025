@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
 
           {/* Social Media Section */}
-          <div className="flex justify-evenly space-x-4 md:space-x-2">
+          <div className="flex justify-evenly space-x-2 md:space-x-2"> 
             {socialLinks.map((link, index) => (
               <a key={index} href={link.href} className="text-gray-400 hover:text-white text-3xl">
                 {link.icon}
@@ -58,5 +58,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;
