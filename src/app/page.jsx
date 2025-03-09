@@ -5,7 +5,7 @@ import AboutFest from "@/components/AboutFest";
 import EventCatogories from "@/components/EventCatogories";
 import Carousel from "@/components/Artist"
 import Timeline from "@/components/Timeline";
-import Orgateam from "@/components/orgateam";
+import Orgateam from "@/components/Orgateam";
 
 
 export default function Home() {
