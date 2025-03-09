@@ -9,21 +9,28 @@ export default function Home() {
     email: "",
     message: "",
   });
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      body: JSON.stringify({
-        ...formData,
-      }),
-    });
-    if (res.ok) {
-      toast.success("Message sent successfully!");
-    } else {
+    setIsLoading(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        body: JSON.stringify({
+          ...formData,
+        }),
+      });
+      if (res.ok) {
+        toast.success("Message sent successfully!");
+      } else {
+        toast.error("Something went wrong!");
+      }
+    } catch (error) {
       toast.error("Something went wrong!");
+    } finally {
+      setIsLoading(false);
     }
-    
   };
   return (
     <div className="flex flex-col gap-10 w-full items-center min-h-screen mt-100 z-10">
@@ -42,14 +49,16 @@ export default function Home() {
               type={placeholder === "Email" ? "email" : "text"}
               placeholder={placeholder}
               className="w-full bg-[#A50C00] text-white p-2 placeholder-white focus:outline-none rounded-lg"
+              disabled={isLoading}
             />
           </div>
         ))}
 
         <button
           type="submit"
+          disabled={isLoading}
           className="w-full h-[60px] bg-[#DAA12A] text-white font-bold text-lg rounded-lg">
-            Submit
+            {isLoading ? "Submitting..." : "Submit"}
           </button>
       </form>
     </div>
