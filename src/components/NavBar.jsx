@@ -42,9 +42,9 @@ const NavBar = () => {
 
             {/* Buy Passes Button - Desktop */}
             <div className="hidden md:block translate-x-1/2">
-                <button className="bg-[#C01E0D] text-white px-5 py-2 rounded-lg shadow-[inset_1px_4px_8px_rgba(0,0,0,0.4)] hover:bg-red-700 transition-transform transform hover:scale-105 duration-200">
+                <Link href={"https://bit.ly/unifest2025"} className="bg-[#C01E0D] text-white px-5 py-2 rounded-lg shadow-[inset_1px_4px_8px_rgba(0,0,0,0.4)] hover:bg-red-700 transition-transform transform hover:scale-105 duration-200">
                     Buy Passes
-                </button>
+                </Link>
             </div>
 
             {/* Mobile Menu Button */}

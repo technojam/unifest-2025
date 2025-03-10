@@ -3,11 +3,7 @@
 import { useState } from "react";
 import Heading from "./ui/Heading";
 
-const images = [
-  "Frame 22.png",
-  "Frame 22.png",
-  "Frame 22.png",
-];
+const images = ["stebin.webp"];
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,7 +22,7 @@ export default function Carousel() {
     <div className="flex flex-col items-center gap-10">
       <Heading>Artist</Heading>
 
-      <div className="relative w-full max-w-5xl mx-auto overflow-hidden rounded-lg shadow-lg">
+      <div className="relative w-full max-w-3xl mx-auto overflow-hidden rounded-lg shadow-lg">
         <div
           className="flex transition-transform duration-500 ease-in-out transform"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
