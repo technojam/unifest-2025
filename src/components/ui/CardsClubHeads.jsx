@@ -1,4 +1,140 @@
 const teamMembers = [
+
+  
+    {
+      "graphexLogo": "/graphex-logo.png",
+      "title": "Graphex",
+      "headTitle": "Club Heads",
+      "headImage1": "/Head-Images.png",
+      "headImage2": "/Head-Images.png",
+      "image": "/ClubPhoto.png",
+      "headName1": "Anirudh Kaushik",
+      "headName2": "Anirudh Kaushik",
+      "description": "Graphex is more than just a design club; it's a creative powerhouse where imagination meets precision. As the heart of visual storytelling at Galgotias University, we craft compelling narratives through design, blending innovation with artistry. Every pixel we place and every concept we create reflects our passion for aesthetics and user experience. At Graphex, we don’t just design—we inspire, innovate, and redefine the boundaries of creativity. Whether it's branding, UI/UX, or motion graphics, we believe in the power of design to transform ideas into impactful visuals. Join us in shaping the future, one design at a time.",
+      "link": "https://drive.google.com/open?id=1nMpZw2CCxYbiXg_FmwZyhsq0xS1_THMt"
+    },
+    {
+      "graphexLogo": "/graphex-logo.png",
+      "title": "Kafila",
+      "headTitle": "Club Heads",
+      "headImage1": "/Head-Images.png",
+      "headImage2": "/Head-Images.png",
+      "image": "/ClubPhoto.png",
+      "headName1": "Soumya Tripathi",
+      "headName2": "Soumya Tripathi",
+      "description": "Kafila – The Mental Health Society of Galgotias University is more than just a club; it’s a movement dedicated to fostering awareness, resilience, and support for mental well-being. In a world where mental health is often overlooked, we aim to break the stigma through open conversations, interactive workshops, expert-led sessions, and creative outreach initiatives. Our community stands as a safe space where students can share, heal, and grow together. At Kafila, we believe that mental health is just as important as physical health, and no one should struggle in silence. Join us in creating a campus where empathy thrives, voices are heard, and well-being is a priority—because mental health matters, today and always.",
+      "link": "https://drive.google.com/open?id=1gw-xTLCaTg1usrY95jcs-xxjRuEYIQI-"
+    },
+    {
+      "graphexLogo": "/graphex-logo.png",
+      "title": "All-Booked",
+      "headTitle": "Club Heads",
+      "headImage1": "/Head-Images.png",
+      "headImage2": "/Head-Images.png",
+      "image": "/ClubPhoto.png",
+      "headName1": "Saksham Agnihotri",
+      "headName2": "Saksham Agnihotri",
+      "description": "All-Booked: Where pages turn into passionate debates and reviews ignite new perspectives. We're a safe haven for literary explorers, diving into diverse worlds crafted by words. Join us to discover fresh realities and celebrate the power of stories. In every book, a new adventure awaits.",
+      "link": "https://drive.google.com/open?id=1yMAFljnMCOZNutC2s70OBgJuDB52Zbdd"
+    },
+    {
+      "graphexLogo": "/graphex-logo.png",
+      "title": "HUMANS OF GALGOTIAS",
+      "headTitle": "Club Heads",
+      "headImage1": "/Head-Images.png",
+      "headImage2": "/Head-Images.png",
+      "image": "/ClubPhoto.png",
+      "headName1": "Devasheesh Patel",
+      "headName2": "Devasheesh Patel",
+      "description": "Humans of Galgotia is a podcast club at Galgotias University that focuses on storytelling and discussions on diverse topics, including personal experiences, social issues, technology, and college life. The club provides a platform for students to share their thoughts through engaging podcast episodes. Members collaborate on scripting, recording, editing, and publishing content, gaining hands-on experience in audio production. With a commitment to creativity and meaningful conversations, Humans of Galgotia fosters a vibrant community where students explore their passion for podcasting, enhance communication skills, and create impactful content that resonates with a wider audience.",
+      "link": "https://drive.google.com/open?id=1DK_TWP_lkiBuelmbJEMY0EneGkMyA4W3"
+    },
+    {
+      "graphexLogo": "/graphex-logo.png",
+      "title": "Frag Club",
+      "headTitle": "Club Heads",
+      "headImage1": "/Head-Images.png",
+      "headImage2": "/Head-Images.png",
+      "image": "/ClubPhoto.png",
+      "headName1": "Faizan Showkat",
+      "headName2": "Faizan Showkat",
+      "description": "FRAG is more than just an eSports club; it's a battleground where passion meets skill. From casual gamers to competitive pros, we bring together the best talents to create an electrifying gaming culture on campus. With high-stakes tournaments, thrilling LAN events, and collaborations with top gaming brands, we’re redefining the eSports experience. Whether you play for fun or aim for glory, FRAG is where you level up. Join us and be a part of the ultimate gaming revolution at Galgotias University!",
+      "link": "https://drive.google.com/open?id=17Sfgv5N7McWFv1hoGCLqZixbQ7R1Hb_6"
+    },
+    {
+      "graphexLogo": "/graphex-logo.png",
+      "title": "Sponsorship Team",
+      "headTitle": "Club Heads",
+      "headImage1": "/Head-Images.png",
+      "headImage2": "/Head-Images.png",
+      "image": "/ClubPhoto.png",
+      "headName1": "Shivang Kulshrestha",
+      "headName2": "Shivang Kulshrestha",
+      "description": "Sponsorship team is the only club in Galgotias Student council which deals with financial part of the event whether it is for funding of an event or handling budgeting. We provide students with learnings in the domain of Finances , Professionalism and how to tackle stressful situations.",
+      "link": "https://drive.google.com/open?id=1_ECn7x_rOYXtW9dpieQRSYH8UKMcaPPJ"
+    },
+    {
+      "graphexLogo": "/graphex-logo.png",
+      "title": "Stage Management Team",
+      "headTitle": "Club Heads",
+      "headImage1": "/Head-Images.png",
+      "headImage2": "/Head-Images.png",
+      "image": "/ClubPhoto.png",
+      "headName1": "Bhavya Singhal",
+      "headName2": "Bhavya Singhal",
+      "description": "Setting The Stage, Stealing The Show. Ever wondered what keeps a grand event running smoothly? That’s us—the Stage Management Team! We’re the invisible hands behind the magic, ensuring every performance starts on time, every mic is in place, and every spotlight hits just right. From cueing artists to syncing sound and lights, we turn chaos into a seamless spectacle. No last-minute hiccup is too big for us to handle! If you’ve ever witnessed a flawless show at Unifest, know that we were working tirelessly behind the scenes to make it happen!",
+      "link": "https://drive.google.com/open?id=1jGlAlfdDCjTlyuWVWkqQxzKbunNlo4IT"
+    },
+    {
+      "graphexLogo": "/graphex-logo.png",
+      "title": "Quizzards",
+      "headTitle": "Club Heads",
+      "headImage1": "/Head-Images.png",
+      "headImage2": "/Head-Images.png",
+      "image": "/ClubPhoto.png",
+      "headName1": "Yashi Chaudhary",
+      "headName2": "Yashi Chaudhary",
+      "description": "Quizzards is the vibrant and intellectually stimulating quiz club of Galgotias University where curiosity meets competition. We're a community of passionate individuals united by our love for trivia, knowledge, and the thrill of competition. We curate and conduct a wide array of engaging quizzes that cater to diverse interests, and fosters a spirit of healthy rivalry. From culture enthusiasts to academic aficionados, everyone finds their niche within our community. We strive to create an inclusive space where every question sparks discovery and every quiz is an opportunity to learn and grow. Quizzards: We Put The Q in IQ!",
+      "link": "https://drive.google.com/open?id=1C8b6iLDRDYXN9xhz_MDhrqlFnifsVJq3"
+    },
+    {
+      "graphexLogo": "/graphex-logo.png",
+      "title": "Galgotias Sustainable Society",
+      "headTitle": "Club Heads",
+      "headImage1": "/Head-Images.png",
+      "headImage2": "/Head-Images.png",
+      "image": "/ClubPhoto.png",
+      "headName1": "Aman Singh",
+      "headName2": "Aman Singh",
+      "description": "Galgotias Sustainable Society is a student-driven initiative at Galgotias University aimed at fostering sustainability and aligning with the United Nations’ Sustainable Development Goals (SDGs). The club is dedicated to raising awareness, inspiring action, and driving impactful solutions to local and global challenges. Our mission is to educate, inspire, and empower students to adopt and implement sustainable practices, fostering a culture of innovation and collaboration for a greener future.",
+      "link": "https://drive.google.com/open?id=1tJNPrY89AUryinMPsRN0zZIjC6UOFEXI"
+    },
+    {
+      "graphexLogo": "/graphex-logo.png",
+      "title": "Cyber Cell",
+      "headTitle": "Club Heads",
+      "headImage1": "/Head-Images.png",
+      "headImage2": "/Head-Images.png",
+      "image": "/ClubPhoto.png",
+      "headName1": "Priyanshu Bhardwaj",
+      "headName2": "Priyanshu Bhardwaj",
+      "description": "In today's cyber age, cybersecurity is not just a capability—it's a responsibility. At Cyber Cell GU, we are learners, innovators bound together by our mission to understand, prevent, and counter cyber threats. Through hands-on workshops, academic research, and real-world problem-solving, we learn how to protect data, networks, and personal privacy. Defense is not a goal, however, but one step ahead among the ever-changing cyber realities.",
+      "link": "https://drive.google.com/open?id=1N58HE_8kMCVV0hOOjaDrWavgQnxqjQi9"
+    },
+    {
+      "graphexLogo": "/graphex-logo.png",
+      "title": "G-Post",
+      "headTitle": "Club Heads",
+      "headImage1": "/Head-Images.png",
+      "headImage2": "/Head-Images.png",
+      "image": "/ClubPhoto.png",
+      "headName1": "Pratyush Nath",
+      "headName2": "Pratyush Nath",
+      "description": "Welcome to G Post, the Magazine and Reporter's society of Galgotias University! Our motto, 'Event ke saath bhi, event ke baad bhi,' embodies our commitment to capturing campus life during and after events. We strategize roles based on strengths, report live moments, conduct interviews, and gather multimedia content. Post-event, we regroup to share insights and craft event reports that reflect our diverse community.",
+      "link": ""
+    },  
+
+
   {
     graphexLogo: "/graphex-logo.png",
     title: "GU Management Team",
