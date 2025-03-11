@@ -135,6 +135,124 @@ const teamMembers = [
     },  
 
 
+
+
+    
+      {
+        "graphexLogo": "/graphex-logo.png",
+        "title": "Fitoor - The Dramatics Society",
+        "headTitle": "Club Heads",
+        "headImage1": "/Head-Images.png",
+        "headImage2": "/Head-Images.png",
+        "image": "/ClubPhoto.png",
+        "headName1": "Nitin Pandey",
+        "headName2": "Nitin Pandey",
+        "description": "Fitoor – The Dramatics Society of Galgotias University is a sanctuary for theatrical enthusiasts, where stories come to life through powerful performances. From gripping stage plays to impactful street performances, we channel emotions into art. Whether it's acting, scriptwriting, or direction, Fitoor provides a platform to hone your creativity and leave audiences spellbound. Step into the spotlight and let your passion take center stage!",
+        "link": "https://drive.google.com/open?id=1GV3H1vUktas9TMEb9RsXJ2cdeeyLdKfV"
+      },
+      {
+        "graphexLogo": "/graphex-logo.png",
+        "title": "Bulls & Bears - The Finance Club",
+        "headTitle": "Club Heads",
+        "headImage1": "/Head-Images.png",
+        "headImage2": "/Head-Images.png",
+        "image": "/ClubPhoto.png",
+        "headName1": "Ritik Bhardwaj",
+        "headName2": "Ritik Bhardwaj",
+        "description": "Bulls & Bears – The Finance Club at Galgotias University is a hub for finance enthusiasts eager to explore the world of stocks, trading, and investment. From insightful discussions on market trends to engaging stock simulations, we empower students with financial literacy and real-world investment strategies. Join us to decode the complexities of finance and navigate the stock market with confidence!",
+        "link": "https://drive.google.com/open?id=1hOexdmZdsUROAP7mHL8HvfpDBLq5IhDx"
+      },
+      {
+        "graphexLogo": "/graphex-logo.png",
+        "title": "Fine Arts Club",
+        "headTitle": "Club Heads",
+        "headImage1": "/Head-Images.png",
+        "headImage2": "/Head-Images.png",
+        "image": "/ClubPhoto.png",
+        "headName1": "Swastika Sharma",
+        "headName2": "Swastika Sharma",
+        "description": "The Fine Arts Club of Galgotias University is a haven for creativity and artistic expression. Whether it’s painting, sketching, or crafting, our club provides a canvas for every imagination. We organize workshops, exhibitions, and competitions that allow students to showcase their talent and bring their artistic visions to life. Join us to explore the beauty of colors and strokes!",
+        "link": "https://drive.google.com/open?id=1JzyA3fJXoXDHm27FfD6R0G0qRSlW9dxL"
+      },
+      {
+        "graphexLogo": "/graphex-logo.png",
+        "title": "Dancing Club",
+        "headTitle": "Club Heads",
+        "headImage1": "/Head-Images.png",
+        "headImage2": "/Head-Images.png",
+        "image": "/ClubPhoto.png",
+        "headName1": "Prashant Sharma",
+        "headName2": "Prashant Sharma",
+        "description": "The Dancing Club at Galgotias University is where rhythm meets passion. From classical to hip-hop, our dancers express emotions through movement. With energetic workshops, performances, and competitions, we provide a stage for every dance form. If music makes you move, join us to turn beats into breathtaking performances!",
+        "link": "https://drive.google.com/open?id=1Mjs3b4GjMFGMRL9fR_XiVZSyh0QO5aH8"
+      },
+      {
+        "graphexLogo": "/graphex-logo.png",
+        "title": "Music Club",
+        "headTitle": "Club Heads",
+        "headImage1": "/Head-Images.png",
+        "headImage2": "/Head-Images.png",
+        "image": "/ClubPhoto.png",
+        "headName1": "Raghav Jain",
+        "headName2": "Raghav Jain",
+        "description": "The Music Club at Galgotias University is a paradise for music lovers. Whether you sing, play an instrument, or compose, our club provides a platform to hone your skills and perform. With jam sessions, competitions, and live gigs, we celebrate the power of music in bringing people together. Join us and let your melody be heard!",
+        "link": "https://drive.google.com/open?id=1NmtE1WzO2pFSMPK7X9pCsoMstRjQL4WY"
+      },
+      {
+        "graphexLogo": "/graphex-logo.png",
+        "title": "Photography Club",
+        "headTitle": "Club Heads",
+        "headImage1": "/Head-Images.png",
+        "headImage2": "/Head-Images.png",
+        "image": "/ClubPhoto.png",
+        "headName1": "Arjun Verma",
+        "headName2": "Arjun Verma",
+        "description": "The Photography Club of Galgotias University is where moments turn into masterpieces. From capturing nature’s beauty to storytelling through portraits, we explore the art of photography through workshops, photo walks, and competitions. Whether you’re a beginner or a pro, if you have an eye for details, this club is for you!",
+        "link": "https://drive.google.com/open?id=1P9sweLgNzq5JzRXBa2M2LPsD-4LcV6Uc"
+      },
+      {
+        "graphexLogo": "/graphex-logo.png",
+        "title": "Aeromodelling Club",
+        "headTitle": "Club Heads",
+        "headImage1": "/Head-Images.png",
+        "headImage2": "/Head-Images.png",
+        "image": "/ClubPhoto.png",
+        "headName1": "Sarthak Mishra",
+        "headName2": "Sarthak Mishra",
+        "description": "The Aeromodelling Club at Galgotias University is a gateway to the world of aviation and model aircraft. Whether it’s drones, gliders, or RC planes, we design, build, and test flying models. Through technical sessions and competitions, we bring together aerospace enthusiasts to innovate and take flight!",
+        "link": "https://drive.google.com/open?id=1QWjEXNz3kJSkMdCbXNfdVdWw7ZqY9LoV"
+      },
+      {
+        "graphexLogo": "/graphex-logo.png",
+        "title": "Astronomy Club",
+        "headTitle": "Club Heads",
+        "headImage1": "/Head-Images.png",
+        "headImage2": "/Head-Images.png",
+        "image": "/ClubPhoto.png",
+        "headName1": "Ananya Singh",
+        "headName2": "Ananya Singh",
+        "description": "The Astronomy Club at Galgotias University takes you on a journey beyond the stars. From stargazing nights to astrophysics discussions, we explore the mysteries of the cosmos. If you’ve ever looked up at the night sky in wonder, this club is for you!",
+        "link": "https://drive.google.com/open?id=1Tz3HGz8RrB5qJNPfKztjxH6f1pvh1QaJ"
+      },
+      {
+        "graphexLogo": "/graphex-logo.png",
+        "title": "Cyber Security Club",
+        "headTitle": "Club Heads",
+        "headImage1": "/Head-Images.png",
+        "headImage2": "/Head-Images.png",
+        "image": "/ClubPhoto.png",
+        "headName1": "Rohit Sinha",
+        "headName2": "Rohit Sinha",
+        "description": "The Cyber Security Club at Galgotias University is dedicated to digital defense. With ethical hacking workshops, cybersecurity challenges, and expert sessions, we equip students with the skills to protect data and fight cyber threats. If cybersecurity intrigues you, join us to stay ahead of cyber risks!",
+        "link": "https://drive.google.com/open?id=1VbGJPLsUUpwT1DdeUAZ7yMkEz2bOd6It"
+      }
+    ,
+    
+
+
+
+
+
   {
     graphexLogo: "/graphex-logo.png",
     title: "GU Management Team",
