@@ -1,82 +1,270 @@
 const teamMembers = [
   {
     graphexLogo: "/graphex-logo.png",
-    title: "GU Management Team",
+    title: "Graphex",
     headTitle: "Club Heads",
-    headImage1: "/Head-Images.png",
-    headImage2: "/Head-Images.png",
-    image: "/ClubPhoto.png",
-    headName1: "Head Name",
-    headName2: "Head Name",
+    headImage1:
+      "https://drive.google.com/open?id=1nMpZw2CCxYbiXg_FmwZyhsq0xS1_THMt",
+    headImage2:
+      "https://drive.google.com/open?id=1A_HHvCBtZgHNWKbsnbACEOhJGqmtARNQ",
+    image: "https://drive.google.com/open?id=1xu4kvuGLGUnYWiMC-vjwf1Vg1bTnxHJT",
+    headName1: "Anirudh Kaushik",
+    headName2: "Shreyash Jaiswal",
     description:
-      "The GU Management Team is a student body that oversees all events and is made up of members from several University student clubs. \n\n" +
-      "The Management Team concept strives to empower student leaders to make a difference by expanding possibilities for their peers while also allowing them to grow as individuals.\n\n" +
-      "While a member of the College staff assists the group of passionate student leaders, it is the GMT members who are fully responsible for event management, \n\n" +
-      "volunteer provision, and ushering wherever needed at the university's events. Ensuring that the provision is truly student-centered, GMT focuses on bringing in the most registrations, \n\n" +
-      "recruiting students to volunteer, organizing matches, managing crowds, and officiating fixtures. The GU Management Team is an important aspect of the student government.",
+      "Graphex is more than just a design club; it's a creative powerhouse where imagination meets precision. As the heart of visual storytelling at Galgotias University, we craft compelling narratives through design, blending innovation with artistry. Every pixel we place and every concept we create reflects our passion for aesthetics and user experience. At Graphex, we don’t just design—we inspire, innovate, and redefine the boundaries of creativity. Whether it's branding, UI/UX, or motion graphics, we believe in the power of design to transform ideas into impactful visuals. Join us in shaping the future, one design at a time.",
+  },
+  {
+    graphexLogo: "/graphex-logo.png",
+    title: "Kafila",
+    headTitle: "Club Heads",
+    headImage1:
+      "https://drive.google.com/open?id=1gw-xTLCaTg1usrY95jcs-xxjRuEYIQI-",
+    headImage2:
+      "https://drive.google.com/open?id=1JGNSNWO_fGVBTv_TFp5KnUuSnv7gQwKW",
+    image: "https://drive.google.com/open?id=1aCoW51WL25GGBhVuPznqnoFHak3hXHFZ",
+    headName1: "Soumya Tripathi",
+    headName2: "Mayank Khandelwal",
+    description:
+      "Kafila – The Mental Health Society of Galgotias University is more than just a club; it’s a movement dedicated to fostering awareness, resilience, and support for mental well-being. In a world where mental health is often overlooked, we aim to break the stigma through open conversations, interactive workshops, expert-led sessions, and creative outreach initiatives. Our community stands as a safe space where students can share, heal, and grow together. At Kafila, we believe that mental health is just as important as physical health, and no one should struggle in silence. Join us in creating a campus where empathy thrives, voices are heard, and well-being is a priority—because mental health matters, today and always.",
+  },
+  {
+    graphexLogo: "/graphex-logo.png",
+    title: "All-Booked",
+    headTitle: "Club Heads",
+    headImage1:
+      "https://drive.google.com/open?id=1yMAFljnMCOZNutC2s70OBgJuDB52Zbdd",
+    headImage2:
+      "https://drive.google.com/open?id=1XzWp13BVUdo07J2qkq2SkLlxPzWtei85",
+    image: "https://drive.google.com/open?id=1FqQus7rvocX1FW0BYRIvrP_y1In-sf53",
+    headName1: "Saksham Agnihotri",
+    headName2: "Khushi",
+    description:
+      "All-Booked: Where pages turn into passionate debates and reviews ignite new perspectives. We're a safe haven for literary explorers, diving into diverse worlds crafted by words. Join us to discover fresh realities and celebrate the power of stories. In every book, a new adventure awaits.",
+  },
+  {
+    graphexLogo: "/graphex-logo.png",
+    title: "Humans of Galgotias",
+    headTitle: "Club Heads",
+    headImage1:
+      "https://drive.google.com/open?id=1DK_TWP_lkiBuelmbJEMY0EneGkMyA4W3",
+    headImage2:
+      "https://drive.google.com/open?id=1Ap242hfpoYXVInElI4JC5_X4F7yA0KmL",
+    image: "https://drive.google.com/open?id=13GiI6ZSpcDpf6dkVwVjaWy5xvtc2Epxp",
+    headName1: "Devasheesh Patel",
+    headName2: "Abhishek Shukla",
+    description:
+      "Humans of Galgotia is a podcast club at Galgotias University that focuses on storytelling and discussions on diverse topics, including personal experiences, social issues, technology, and college life. The club provides a platform for students to share their thoughts through engaging podcast episodes. Members collaborate on scripting, recording, editing, and publishing content, gaining hands-on experience in audio production. With a commitment to creativity and meaningful conversations, Humans of Galgotia fosters a vibrant community where students explore their passion for podcasting, enhance communication skills, and create impactful content that resonates with a wider audience.",
+  },
+  {
+    graphexLogo: "/graphex-logo.png",
+    title: "Frag Club",
+    headTitle: "Club Heads",
+    headImage1:
+      "https://drive.google.com/open?id=17Sfgv5N7McWFv1hoGCLqZixbQ7R1Hb_6",
+    headImage2:
+      "https://drive.google.com/open?id=1IabIjQJQLORkdSnzUH9ZXcF9w5ipjBwh",
+    image: "https://drive.google.com/open?id=1a2plWcbTT1RyhgJwlZJuPUCMeJWiTHZB",
+    headName1: "Faizan Showkat",
+    headName2: "Chirag chawla",
+    description:
+      "FRAG is more than just an eSports club; it's a battleground where passion meets skill. From casual gamers to competitive pros, we bring together the best talents to create an electrifying gaming culture on campus. With high-stakes tournaments, thrilling LAN events, and collaborations with top gaming brands, we’re redefining the eSports experience. Whether you play for fun or aim for glory, FRAG is where you level up. Join us and be a part of the ultimate gaming revolution at Galgotias University!",
+  },
+  {
+    graphexLogo: "/graphex-logo.png",
+    title: "Sponsorship Team",
+    headTitle: "Club Heads",
+    headImage1:
+      "https://drive.google.com/open?id=1_ECn7x_rOYXtW9dpieQRSYH8UKMcaPPJ",
+    headImage2:
+      "https://drive.google.com/open?id=15fTPLE7HlX8P8vQfS_6abd4i_qoNMMnQ",
+    image: "https://drive.google.com/open?id=1E-Fvrke9oAlJqLPfaH8DJFv8atqCXegV",
+    headName1: "Shivang kulshrestha",
+    headName2: "Dakshita Gupta",
+    description:
+      "Sponsorship team is the only club in Galgotias Student council which deals with financial part of the event whether it is for funding of an event or handling budgeting. We provide students with learnings in the domain of Finances, Professionalism, and how to tackle stressful situations.",
   },
   {
     graphexLogo: "/graphex-logo.png",
     title: "Stage Management Team",
     headTitle: "Club Heads",
-    headImage1: "/Head-Images.png",
-    headImage2: "/Head-Images.png",
-    headName1: "Head Name",
-    headName2: "Head Name",
-    image: "/ClubPhoto.png",
+    headImage1:
+      "https://drive.google.com/open?id=1jGlAlfdDCjTlyuWVWkqQxzKbunNlo4IT",
+    headImage2:
+      "https://drive.google.com/open?id=1sqG_SUCVcllr1_KE5FnHt3RqC-iVOPIA",
+    image: "https://drive.google.com/open?id=1qQRJR8fBzpwXUzj-2YFHmEvy7ZZbYAoa",
+    headName1: "Bhavya Singhal",
+    headName2: "Sakshi Soni",
     description:
-      "Behind every mesmerizing performance lies our exceptional Stage Management Team. At Galgotias University, we are the unsung heroes, working tirelessly behind the scenes to ensure flawless productions that captivate audiences. \n\n" +
-      "With precision and dedication, we coordinate rehearsals, manage logistics, and meticulously prepare every detail for the opening event. From early preparations to final cues, our team ensures a seamless and enchanting experience. \n\n" +
-      "Our passion for the performing arts and attention to detail lay the foundation for successful productions. We work long hours, arriving early and staying late, handling every aspect of the show. Our expertise allows performers to shine, \n\n" +
-      "leaving audiences with unforgettable memories and enhancing Galgotias University's vibrant performing arts community.",
+      "Setting The Stage, Stealing The Show. Ever wondered what keeps a grand event running smoothly? That’s us—the Stage Management Team! We’re the invisible hands behind the magic, ensuring every performance starts on time, every mic is in place, and every spotlight hits just right. From cueing artists to syncing sound and lights, we turn chaos into a seamless spectacle. No last-minute hiccup is too big for us to handle! If you’ve ever witnessed a flawless show at Unifest, know that we were working tirelessly behind the scenes to make it happen!",
   },
   {
     graphexLogo: "/graphex-logo.png",
-    title: "Graphex",
+    title: "Quizzards",
     headTitle: "Club Heads",
-    headImage1: "/Head-Images.png",
-    headImage2: "/Head-Images.png",
-    headName1: "Head Name",
-    headName2: "Head Name",
-    image: "/ClubPhoto.png",
+    headImage1:
+      "https://drive.google.com/open?id=1C8b6iLDRDYXN9xhz_MDhrqlFnifsVJq3",
+    headImage2:
+      "https://drive.google.com/open?id=1UP52RzSGC9u0dRAXr-Jar3a1lY1f3Jq6",
+    image: "https://drive.google.com/open?id=1YC8DOdww9Sn7msYwuiloEbmLC40hywpf",
+    headName1: "Yashi Chaudhary",
+    headName2: "Vedant Umrao",
     description:
-      "Galgotias Graphex: Where Creativity Meets Innovation! \n\n" +
-      "In a world of pixels, vectors, and boundless imagination, Galgotias University's Graphics Designer Club is a hub of creativity, collaboration, and artistic exploration. \n\n" +
-      "Our passionate designers bring ideas to life, offering fresh logos, captivating website designs, dynamic video banners, certificates, and eye-catching social media graphics. \n\n" +
-      "Graphex thrives in all design aspects, staying active both online and offline. We constantly explore new trends and techniques, ensuring our designs remain cutting-edge and impactful. \n\n" +
-      "For us, design goes beyond aesthetics—it's about crafting experiences that resonate with audiences. Graphics Designer Club: Where design truly comes to life.",
+      "Quizzards is the vibrant and intellectually stimulating quiz club of Galgotias University where curiosity meets competition. We're a community of passionate individuals united by our love for trivia, knowledge, and the thrill of competition. We curate and conduct a wide array of engaging quizzes that cater to diverse interests, and foster a spirit of healthy rivalry. From culture enthusiasts to academic aficionados, everyone finds their niche within our community. We strive to create an inclusive space where every question sparks discovery and every quiz is an opportunity to learn and grow. Quizzards: We Put The Q in IQ!",
+  },
+  {
+    graphexLogo: "/graphex-logo.png",
+    title: "Galgotias Sustainable Society",
+    headTitle: "Club Heads",
+    headImage1:
+      "https://drive.google.com/open?id=1tJNPrY89AUryinMPsRN0zZIjC6UOFEXI",
+    headImage2:
+      "https://drive.google.com/open?id=1yYpiyaZR4HmrYyWpmPV_zCj8OguTUpeG",
+    image: "https://drive.google.com/open?id=1DfLg_noD1VqDepKhyo8KnC8XMSedfPlr",
+    headName1: "Aman Singh",
+    headName2: "Kumari Shagun",
+    description:
+      "Galgotias Sustainable Society is a student-driven initiative at Galgotias University aimed at fostering sustainability and aligning with the United Nations’ Sustainable Development Goals (SDGs). The club is dedicated to raising awareness, inspiring action, and driving impactful solutions to local and global challenges. Our mission is to educate, inspire, and empower students to adopt and implement sustainable practices, fostering a culture of innovation and collaboration for a greener future.",
+  },
+  {
+    graphexLogo: "/graphex-logo.png",
+    title: "Cyber Cell",
+    headTitle: "Club Heads",
+    headImage1:
+      "https://drive.google.com/open?id=1N58HE_8kMCVV0hOOjaDrWavgQnxqjQi9",
+    headImage2:
+      "https://drive.google.com/open?id=100IrGFPezLV57wdn8LIewOY-3oyBfAiR",
+    image: "https://drive.google.com/open?id=1mIa7EUQph5Hrrg_DxB_LXKbLif67XiNA",
+    headName1: "Priyanshu Bhardwaj",
+    headName2: "Ayushi Shukla",
+    description:
+      "In today's cyber age, cybersecurity is not just a capability—it's a responsibility. At Cyber Cell GU, we are learners, innovators bound together by our mission to understand, prevent, and counter cyber threats. Through hands-on workshops, academic research, and real-world problem-solving, we learn how to protect data, networks, and personal privacy. Defense is not a goal, however, but one step ahead among the ever-changing cyber realities. Join us toward a secure online future—one step at a time.",
+  },
+  {
+    graphexLogo: "/graphex-logo.png",
+    title: "G-Post",
+    headTitle: "Club Heads",
+    headImage1:
+      "https://drive.google.com/open?id=1QOotiK-SIsOJPnZgs0_tRCVVq1tXbJ6F",
+    headImage2:
+      "https://drive.google.com/open?id=16rwKJVueUn7q9M6O9LWPR7vRWabfjYKe",
+    image: "https://drive.google.com/open?id=1mCGSvnik8_1udDBYFsJaPxovptsLZuLB",
+    headName1: "Pratyush Nath",
+    headName2: "Vimanshu",
+    description:
+      "Welcome to G Post, the Magazine and Reporter's society of Galgotias University! Our motto, 'Event ke saath bhi, event ke baad bhi,' embodies our commitment to capturing campus life during and after events. We strategize roles based on strengths, report live moments, conduct interviews, and gather multimedia content. Post-event, we regroup to share insights and craft event reports that reflect our diverse community. More than a team, we’re a family united by our passion for creativity. Join us on this exciting journey, and let’s create some magic together!",
   },
   {
     graphexLogo: "/graphex-logo.png",
     title: "Online Promotions Team",
     headTitle: "Club Heads",
-    headImage1: "/Head-Images.png",
-    headImage2: "/Head-Images.png",
-    headName1: "Head Name",
-    headName2: "Head Name",
-    image: "/ClubPhoto.png",
+    headImage1:
+      "https://drive.google.com/open?id=1NKM2FAl6kQdroWOKTqf6d5tsYw4OEtML",
+    headImage2:
+      "https://drive.google.com/open?id=1mUW1t_u-EhrdjImKgi9Qs1VqGQx4zj0S",
+    image: "https://drive.google.com/open?id=16AL_03Dr9gr4_6gSM6WneSIanJevvn8i",
+    headName1: "Mayank Singh",
+    headName2: "Harsh Vardhan Agrawal",
     description:
-      "Elevate Your Digital Presence with Galgotias University's Online Promotions Team!\n\n" +
-      "As a premier society for mastering strategic marketing techniques, we guide you through dynamic learning experiences and uncover the nuances of effective promotion strategies.\n\n" +
-      "Our team expertly manages the social media presence of the Galgotias Student Council and its clubs, delivering engaging live streams of university events.\n\n" +
-      "We delve into social media algorithms, teaching the art of organic growth—from followers and likes to verified comments.Join us to amplify your profile’s reach, attract a broader audience, and unlock exciting opportunities. \n\n" +
-      "Shape your digital journey with the Online Promotions Team and embark on a path to impactful success.",
+      "The Online Promotions Team is the official social media manager of the Galgotias University Student Council, handling the digital presence of all council-affiliated clubs. We manage event promotions and ensure that each club receives the recognition it deserves. From designing eye-catching stories to maximizing reach across all platforms, we combine creativity and strategy to enhance the university’s online community. Our team works behind the scenes to keep students informed, connected, and excited about campus events.",
   },
   {
     graphexLogo: "/graphex-logo.png",
-    title: "Cam Circle",
+    title: "Noteveda",
     headTitle: "Club Heads",
-    headImage1: "/Head-Images.png",
-    headImage2: "/Head-Images.png",
-    headName1: "Head Name",
-    headName2: "Head Name",
-    image: "/ClubPhoto.png",
+    headImage1:
+      "https://drive.google.com/open?id=1ZGgwU_xLPhqkB8Y79dGtTMls6kVP7elW",
+    headImage2:
+      "https://drive.google.com/open?id=14yNnKFguXMJXHus9KvPm8zyDif3iwE1a",
+    image: "https://drive.google.com/open?id=11J1qD_yZItcrHG5gPdfv21ThLyWNRQbW",
+    headName1: "Mukul Kumar",
+    headName2: "Jintu Saikia",
     description:
-      "Galgotias University Cam Circle: Capture the Moment, Make It Last Forever! \n\n" +
-      "From group shots to candid moments, Cam Circle is your gateway to unparalleled aesthetics. Every click tells a story, every frame evokes emotion, and every image captures the essence of life. \n\n" +
-      "We document events with precision, capturing the aura of every environment. Our journey involves workshops, photo walks, and competitions that broaden our vision and spark creativity. \n\n" +
-      "We inspire talent through exhibitions and motivate participation with a keen eye for artistry.In a world where every frame is art, every click is expression, and every photograph is perception, \n\n" +
-      "Cam Circle invites you to explore life anew through the lens.",
+      "Noteveda is a music club designed for individuals who are passionate about learning and creating music. We encourage members to experiment with different instruments, genres, and styles. The club organizes various events, including rehearsals, group projects, and public performances, giving everyone a chance to showcase their skills and learn from others. At Noteveda, music is not just an art form, but a community experience that brings people together.",
+  },
+
+  {
+    graphexLogo: "/graphex-logo.png",
+    title: "Actor’s Hub",
+    headTitle: "Club Heads",
+    headImage1:
+      "https://drive.google.com/open?id=1DhBddIohM561SBCheM_ERbiUuf_5FtFI",
+    headImage2:
+      "https://drive.google.com/open?id=1nGt0Ox2pStVE8stYJmqSOURYZP-YDvBG",
+    image: "https://drive.google.com/open?id=1b2gdKDTZp6Mge79vU2HxqVr-DxNLVdKL",
+    headName1: "Ishika Gupta",
+    headName2: "Nikhil Mishra",
+    description:
+      "Actors Hub: Where Stories Come to Life! More than just a club, Actors Hub is a community of passionate performers who bring characters to reality through drama, emotions, and creativity. Whether it’s theatrical plays, skits, mime acts, or improv, we provide a stage for self-expression and artistic growth. We believe in the power of storytelling to inspire, entertain, and make an impact. Join us to explore the magic of acting, unleash your potential, and be part of something unforgettable!",
+  },
+  {
+    graphexLogo: "/graphex-logo.png",
+    title: "Humanity Saviours",
+    headTitle: "Club Heads",
+    headImage1:
+      "https://drive.google.com/open?id=1zAc-0KTBq-JYx7rMxaSDO5nW6mojPttW",
+    headImage2:
+      "https://drive.google.com/open?id=1ZPCf5QpPHLuK5wvAIjbJCNgRzJI_OsZh",
+    image: "https://drive.google.com/open?id=1C2GRM_MTx5av0yAf6w8pBO4pcXggTUxx",
+    headName1: "Shiv Sundar Singh",
+    headName2: "Utkarsh Kumar",
+    description:
+      "Humanity Saviours is a social working club under Galgotias University Student Council, committed to uplifting underprivileged communities through humanitarian efforts. The club focuses on providing food, education, healthcare, disaster relief, and environmental initiatives to create a better society. Through charity drives, skill development programs, and awareness campaigns, it empowers individuals and fosters compassion. Open to all who wish to make a difference, the club believes that small acts of kindness can bring meaningful change to the world.",
+  },
+  {
+    graphexLogo: "/graphex-logo.png",
+    title: "Artistico",
+    headTitle: "Club Heads",
+    headImage1:
+      "https://drive.google.com/open?id=1Zw3TIluX583Ojj3dirsHsDH9nbmX7ejK",
+    headImage2:
+      "https://drive.google.com/open?id=1IPozI-nwvfv_c70VZE6rRreVpKajyG0k",
+    image: "https://drive.google.com/open?id=1nd3LdA2z25e_wlFe2rTOxiDk998QZM8T",
+    headName1: "Subhasree Chattopadhyaya",
+    headName2: "Asmita Shekhar",
+    description:
+      "Our vibrant art club is a dynamic community of talented members, united by a shared passion for creative expression. We explore a diverse range of art forms, from painting and sketching to craft works and digital media. Through regular art museum visits, commission works, and exhibitions, our members enhance their skills, exchange ideas, and inspire one another. Our club provides a nurturing environment where artists of all levels can grow, experiment, and showcase their unique artistic visions.",
+  },
+  {
+    graphexLogo: "/graphex-logo.png",
+    title: "Galgotias Campus Influencer",
+    headTitle: "Club Heads",
+    headImage1:
+      "https://drive.google.com/open?id=1vMHb97GfCJKA7FiHoy1eWYHsUbc9hRnN",
+    headImage2:
+      "https://drive.google.com/open?id=1qCZ400PIGzp6uiMW8HdIITvAro37n6qS",
+    image: "https://drive.google.com/open?id=1TIb2P8Zqpx_y4ZtQxDWzttWF3IDbphqH",
+    headName1: "Vikram Nayak",
+    headName2: "Manish Kumar",
+    description:
+      "Galgotias Campus Influencers (GCI) aims to promote Galgotias University and its Student Council while providing students with opportunities to showcase their talents. By organizing workshops, competitions, and cultural events, GCI fosters teamwork and personal growth. It supports holistic development across arts, sports, academics, and leadership, preparing students for real-world challenges. GCI also enhances the university’s reputation by highlighting student achievements and fostering industry connections. Through its initiatives, GCI ensures Galgotias University remains a hub of excellence, innovation, and student success.",
+  },
+  {
+    graphexLogo: "/graphex-logo.png",
+    title: "Business Club",
+    headTitle: "Club Heads",
+    headImage1:
+      "https://drive.google.com/open?id=1yk1NiAwtwUSy82dgpLwjOBvo9pJzTLrs",
+    headImage2:
+      "https://drive.google.com/open?id=1QXeRVEsZNrPrY94QlVPNhCnLzrHbkrDI",
+    image: "https://drive.google.com/open?id=1IfS28HJjJbl_kiM-d-Izc5luwC-LBPJa",
+    headName1: "Sneha Ranjan",
+    headName2: "Devvrat Singh",
+    description:
+      "The Galgotia Student Council Business Club is a community for students who are passionate about business, entrepreneurship, and leadership. Our goal is to help students learn, grow, and connect with industry professionals. We organize workshops, guest talks, competitions, and networking events to give real-world business exposure. Whether you’re interested in marketing, finance, startups, or management, our club helps you develop essential skills and meet like-minded people. We believe in learning by doing, turning ideas into action, and preparing for future careers.",
+  },
+  {
+    graphexLogo: "/graphex-logo.png",
+    title: "Camcircle",
+    headTitle: "Club Heads",
+    headImage1:
+      "https://drive.google.com/open?id=1nlmwUNrzjQTqeTcuCejzvjJ09Whhzxkb",
+    headImage2:
+      "https://drive.google.com/open?id=1ndyb8gtNCJpGaVBhoHlY2LugIAweit3n",
+    image: "https://drive.google.com/open?id=1gYe8dpCnXLJKAaNZlhCFvJwr1FISiJL3",
+    headName1: "Sarvagya Kumar",
+    headName2: "Saurav Kumar",
+    description:
+      "Cam Circle: Capturing Moments, Creating Stories! In a world of photos, edits, and creativity, Galgotias University's Cam Circle is the ultimate hub for photography, videography, and editing enthusiasts. Our passionate storytellers freeze moments through their photos and powerful edits. 'I can freeze time, What's your superpower?' That’s the spirit we live by. From portraits to cinematic videos, we capture emotions that speak louder than words. Cam Circle stays active both on field and backend, constantly evolving with new trends. For us, photography and videography go beyond just visuals. Cam Circle: Where every shot has a story!",
   },
 ];
 
@@ -89,14 +277,13 @@ export default function CardsClubHeads({ activeTab }) {
     return null;
 
   return (
-    <div >
+    <div>
       {teamMembers.map((member, index) => {
         const isEven = index % 2 === 0;
         const textColor = isEven ? "text-black" : "text-white";
         const bgColor = isEven
           ? "bg-[url('/bgyellow.webp')]"
           : "bg-[url('/bgred.webp')]";
-
 
         return (
           <div
@@ -118,51 +305,94 @@ export default function CardsClubHeads({ activeTab }) {
               >
                 {member.title}
               </h2>
-
-              {/* Head Images & Head Title (Top Right) */}
-              <div className="flex flex-col items-center">
-                <h3 className={`text-lg md:text-xl font-semibold ${textColor}`}>
-                  {member.headTitle}
-                </h3>
-                <div className="flex gap-4 mt-1">
-                  <div className="text-center">
-                    <img
-                      src={member.headImage1}
-                      alt="Head 1"
-                      className="w-16 h-16"
-                    />
-                    <p className={`${textColor} mt-2`}>{member.headName1}</p>
-                  </div>
-                  <div className="text-center">
-                    <img
-                      src={member.headImage2}
-                      alt="Head 2"
-                      className="w-16 h-16 "
-                    />
-                    <p className={`${textColor} mt-2`}>{member.headName2}</p>
-                  </div>
-                </div>
-              </div>
             </div>
 
-            {/* Content Section - Description & Club Image */}
-            <div className="w-full max-w-6xl grid md:grid-cols-2 gap-10 items-center mt-10">
-              {/* Description (Left Side) */}
-              <div className="text-center md:text-left">
-                <p
-                  className={`text-md leading-relaxed text-lg font-light ${textColor}`}
-                >
-                  {member.description}
-                </p>
-              </div>
+            <div className="w-full max-w-6xl px-4 py-8">
+              <div className="grid md:grid-cols-2 gap-10 items-center">
+                {/* Description and Details (Left Side) */}
+                <div className="flex flex-col space-y-6 text-center md:text-left">
+                  <p
+                    className={`text-lg leading-relaxed font-light ${textColor}`}
+                  >
+                    {member.description}
+                  </p>
 
-              {/* Club Image (Right Side) */}
-              <div className="flex justify-center">
-                <img
-                  src={member.image}
-                  alt={member.title}
-                  className="w-[90%] md:w-[500px] h-auto object-cover rounded-lg shadow-lg"
-                />
+                  <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                    <h3 className={`text-xl font-semibold mb-3 ${textColor}`}>
+                      Club Heads
+                    </h3>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      {member.headName1 && (
+                        <div className="flex items-center space-x-3">
+                          {member.headImage1 && (
+                            <div className="w-12 h-12 rounded-full overflow-hidden">
+                              <img
+                                src={member.headImage1}
+                                alt={member.headName1}
+                                className="w-full h-full object-cover"
+                              />
+                            </div>
+                          )}
+                          <div className="flex flex-col">
+                            <span className={`font-medium ${textColor}`}>
+                              {member.headName1}
+                            </span>
+                            {member.headEmail1 && (
+                              <span
+                                className={`text-sm opacity-75 ${textColor}`}
+                              >
+                                {member.headEmail1}
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                      )}
+
+                      {member.headName2 && (
+                        <div className="flex items-center space-x-3">
+                          {member.headImage2 && (
+                            <div className="w-12 h-12 rounded-full overflow-hidden">
+                              <img
+                                src={member.headImage2}
+                                alt={member.headName2}
+                                className="w-full h-full object-cover"
+                              />
+                            </div>
+                          )}
+                          <div className="flex flex-col">
+                            <span className={`font-medium ${textColor}`}>
+                              {member.headName2}
+                            </span>
+                            {member.headEmail2 && (
+                              <span
+                                className={`text-sm opacity-75 ${textColor}`}
+                              >
+                                {member.headEmail2}
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Club Image (Right Side) */}
+                <div className="flex justify-center order-first md:order-last">
+                  <div className="relative overflow-hidden rounded-xl shadow-xl">
+                    <img
+                      src={member.image}
+                      alt={member.title}
+                      className="w-full max-w-md h-auto object-cover transition-transform duration-300 hover:scale-105"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                      <h2 className="text-xl md:text-2xl font-bold text-white">
+                        {member.title}
+                      </h2>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
