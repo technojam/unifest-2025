@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Heading from "./ui/Heading";
 
-const images = ["stebin.webp"];
+const images = ["stebin.webp","salimsulaiman.webp"];
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);

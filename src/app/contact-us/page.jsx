@@ -33,7 +33,7 @@ export default function Home() {
     }
   };
   return (
-    <div className="flex flex-col gap-10 w-full items-center min-h-screen mt-100 z-10">
+    <div className="flex fadein flex-col gap-10 w-full items-center min-h-screen mt-100 z-10">
       <Heading>Contact Details</Heading>
       <form className="w-full max-w-md space-y-4" onSubmit={handleSubmit}>
 
