@@ -13,6 +13,7 @@ export default function CoreTeam() {
       <div className="absolute top-0 left-0 right-0 h-screen overflow-hidden pointer-events-none z-0">
         <Image
           src="/bgyellow.webp"
+          layout="fill"
           fill={true}
           priority
           sizes="100vw"
@@ -55,10 +56,10 @@ export default function CoreTeam() {
       </div>
 
       {/* Cards Section */}
-      <div className="w-full z-10 mt-16 ">
-        <CardsCoreTeam activeTab={activeTab} />
-        <CardsClubHeads activeTab={activeTab} />
-      </div>
+      <div className="w-full z-10 mt-16">
+  {activeTab === "core" && <CardsCoreTeam />}
+  {activeTab === "club" && <CardsClubHeads />}
+</div>
 
     </div>
   );
