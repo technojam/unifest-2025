@@ -153,3 +153,18 @@ main {
   font-weight: 900;
   font-style: italic;
 }
+
+.fadein {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+

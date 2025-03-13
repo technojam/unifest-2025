@@ -4,7 +4,7 @@ export default function Home() {
   const sponsors = new Array(18).fill("/Frame 22.png");
 
   return (
-    <div>
+    <div className="fadein"> 
       <div className=" w-full flex flex-col items-center justify-center">
         <div className="relative flex flex-col items-center h-screen justify-center">
          <h2 className="font-[Alinore] headingbg font-bold text-center uppercase tracking-wider drop-shadow-[-6px_-2px_0px_black] text-4xl sm:text-5xl md:text-6xl lg:text-8xl px-4 ">

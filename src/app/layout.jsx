@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative flex flex-col gap-10 w-full items-center flex-grow min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} fadein antialiased relative flex flex-col w-full items-center flex-grow min-h-screen`}
         style={{
           backgroundImage: "url('/bg.webp')",
           backgroundSize: "100% auto",

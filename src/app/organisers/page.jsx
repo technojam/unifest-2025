@@ -8,7 +8,7 @@ export default function CoreTeam() {
   const [activeTab, setActiveTab] = useState("core");
 
   return (
-    <div className="flex flex-col items-center w-full relative min-h-screen ">
+    <div className="flex fadein flex-col items-center w-full relative min-h-screen ">
       {/* Background Image */}
       <div className="absolute top-0 left-0 right-0 h-screen overflow-hidden pointer-events-none z-0">
         <Image
@@ -28,7 +28,7 @@ export default function CoreTeam() {
         </h2>
 
         {/* Tabs Section */}
-        <div className="flex w-[90%] max-w-[73vh] sm:w-[50%] md:w-[45%] h-[40px] rounded-[39px] bg-[#E5B73B] font-poppins overflow-hidden border border-black mt-4 z-50 pointer-events-auto ">
+        <div className="flex w-[90%] max-w-[73vh] sm:w-[50%] md:w-[45%] h-[40px] rounded-[39px] bg-[#E5B73B] font-poppins overflow-hidden border border-black mt-4 z-10 pointer-events-auto ">
           <button
             className={`flex-1 text-center py-2 rounded-[73.8px] font-bold text-sm sm:text-base transition-all duration-300 ${
               activeTab === "core"
