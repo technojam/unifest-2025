@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -14,10 +14,44 @@ const navLinks = [
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [visible, setVisible] = useState(true);
     const pathname = usePathname();
+    const navRef = useRef(null);
+
+    // Close mobile menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
+
+  // Handle navbar visibility based on scroll direction
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+    const handleScroll = () => {
+      if (window.scrollY < lastScrollY) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+      lastScrollY = window.scrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
     return (
-        <nav className="bg-black/80 backdrop-blur-sm pr-4 h-16 w-[96%] max-w-7xl rounded-xl shadow-lg border border-white/10 flex items-center justify-between z-50 mt-4">
+        <nav
+         ref = {navRef}
+         className={`fixed top-0 left-1/2 transform -translate-x-1/2 w-[96%] max-w-7xl rounded-xl shadow-lg border border-white/10 flex items-center justify-between z-50 transition-transform duration-300 ${
+            visible ? "translate-y-0" : "-translate-y-full"
+          } bg-black/80 backdrop-blur-sm pr-4 h-16 mt-4`} >
             {/* Logo */}
             <div className="flex items-center flex-shrink-0 ml-4">
                 <img src="/vercel.svg" alt="UNIFEST 2025 Logo" className="object-contain w-32 h-21" />
@@ -72,7 +106,9 @@ const NavBar = () => {
                 <ul className="flex flex-col space-y-4 pt-2">
                     {navLinks.map(({ href, label }) => (
                         <li key={href}>
-                            <Link href={href} className="relative px-4 py-3 block text-white font-medium">
+                            <Link href={href} 
+                            onClick={() => setIsMenuOpen(false)}
+                             className="relative px-4 py-3 block text-white font-medium">
                                 <span
                                     className={`absolute inset-0 border-2 border-white border-dotted ${pathname === href ? "opacity-70" : "opacity-0 hover:opacity-20"
                                         }`}

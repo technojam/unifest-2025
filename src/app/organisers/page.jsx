@@ -22,7 +22,7 @@ export default function CoreTeam() {
       </div>
 
       {/* Heading Section */}
-      <div className="w-full flex flex-col items-center pt-[20vh] pb-[3vh] md:pt-[30vh] lg:pt-[390px] ">
+      <div className="w-full flex flex-col items-center pt-[33vh] pb-[3vh] md:pt-[35vh] lg:pt-[500px] z-20 ">
         <h2 className="font-[Alinore] text-[#CC200E] font-bold text-center uppercase tracking-wider drop-shadow-[-6px_-2px_0px_black] text-4xl sm:text-5xl md:text-6xl lg:text-8xl px-4 ">
           ORGANISING TEAM
         </h2>
@@ -55,7 +55,7 @@ export default function CoreTeam() {
       </div>
 
       {/* Cards Section */}
-      <div className="w-full z-10 mt-41 ">
+      <div className="w-full z-10 mt-16 ">
         <CardsCoreTeam activeTab={activeTab} />
         <CardsClubHeads activeTab={activeTab} />
       </div>
