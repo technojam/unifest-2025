@@ -50,7 +50,7 @@ console.log(activeTab)
             }`}
             onClick={() => setActiveTab("club")}
           >
-            CLUB HEADS
+            CLUBS
           </button>
         </div>
       </div>

@@ -22,7 +22,6 @@ export const metadata = {
     "Galgotias Unifest, tech fest, cultural fest, music, dance, coding competitions, hackathon, Galgotias University, college festival, Greater Noida events, student competitions, technical workshops",
   authors: [{ name: "Galgotias University" }],
   robots: "index, follow",
-  themeColor: "#1a237e",
   openGraph: {
     title: "Galgotias Unifest 2025 | Annual Cultural & Technical Festival",
     description:
