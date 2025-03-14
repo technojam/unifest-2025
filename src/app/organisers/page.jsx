@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function CoreTeam() {
   const [activeTab, setActiveTab] = useState("core");
-
+console.log(activeTab)
   return (
     <div className="flex fadein flex-col items-center w-full relative min-h-screen ">
       {/* Background Image */}
@@ -57,8 +57,9 @@ export default function CoreTeam() {
 
       {/* Cards Section */}
       <div className="w-full z-10 mt-16">
-  {activeTab === "core" && <CardsCoreTeam />}
-  {activeTab === "club" && <CardsClubHeads />}
+      
+  {activeTab === "core" && <CardsCoreTeam activeTab={activeTab} />}
+  {activeTab === "club" && <CardsClubHeads activeTab={activeTab}/>}
 </div>
 
     </div>

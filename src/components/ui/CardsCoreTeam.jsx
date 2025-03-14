@@ -1,6 +1,5 @@
 const teamMembers = [
   {
-    // 3not original forom here
     name: "Adil Ali Khan",
     role: "PRESIDENT",
     email: "",
