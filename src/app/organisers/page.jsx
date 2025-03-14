@@ -6,13 +6,14 @@ import Image from "next/image";
 
 export default function CoreTeam() {
   const [activeTab, setActiveTab] = useState("core");
-
+console.log(activeTab)
   return (
     <div className="flex fadein flex-col items-center w-full relative min-h-screen ">
       {/* Background Image */}
       <div className="absolute top-0 left-0 right-0 h-screen overflow-hidden pointer-events-none z-0">
         <Image
           src="/bgyellow.webp"
+          layout="fill"
           fill={true}
           priority
           sizes="100vw"
@@ -22,7 +23,7 @@ export default function CoreTeam() {
       </div>
 
       {/* Heading Section */}
-      <div className="w-full flex flex-col items-center pt-[20vh] pb-[3vh] md:pt-[30vh] lg:pt-[390px] ">
+      <div className="w-full flex flex-col items-center pt-[33vh] pb-[3vh] md:pt-[35vh] lg:pt-[500px] z-20 ">
         <h2 className="font-[Alinore] text-[#CC200E] font-bold text-center uppercase tracking-wider drop-shadow-[-6px_-2px_0px_black] text-4xl sm:text-5xl md:text-6xl lg:text-8xl px-4 ">
           ORGANISING TEAM
         </h2>
@@ -55,10 +56,11 @@ export default function CoreTeam() {
       </div>
 
       {/* Cards Section */}
-      <div className="w-full z-10 mt-41 ">
-        <CardsCoreTeam activeTab={activeTab} />
-        <CardsClubHeads activeTab={activeTab} />
-      </div>
+      <div className="w-full z-10 mt-16">
+      
+  {activeTab === "core" && <CardsCoreTeam activeTab={activeTab} />}
+  {activeTab === "club" && <CardsClubHeads activeTab={activeTab}/>}
+</div>
 
     </div>
   );
