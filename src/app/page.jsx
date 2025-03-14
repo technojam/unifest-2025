@@ -16,10 +16,11 @@ export default function Home() {
       
       <Welcome />
       <AboutFest />
+         <Carousel />
       <Orgateam/>
       <EventCatogories />
-      <Carousel />
-      <Timeline/>
+   
+      {/* <Timeline/> */}
     </div>
   );
 }
