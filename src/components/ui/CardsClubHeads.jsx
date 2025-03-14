@@ -8,7 +8,22 @@ const teamMembers = [
     CoverImages: "/coverimages/technojam.webp",
     headName1: "Neeraj Krishna",
     headName2: "Vanshika Prakash",
-    description:`Technojam: Throttle to Learn! More than just a tech club, Technojam is a movement that fuels curiosity, creativity, and innovation. We thrive on coding, problem-solving, and pushing the boundaries of technology. From hackathons and workshops to AI, DevOps, and open-source projects, we provide a platform where ideas transform into reality. Whether you're a beginner or an expert, if you have the drive to learn and build, this is your playground. At Technojam, we don’t just follow trends—we create them. Throttle your passion, accelerate your skills, and code the future with us!`
+    description: `Technojam: Throttle to Learn! More than just a tech club, Technojam is a movement that fuels curiosity, creativity, and innovation. We thrive on coding, problem-solving, and pushing the boundaries of technology. From hackathons and workshops to AI, DevOps, and open-source projects, we provide a platform where ideas transform into reality. Whether you're a beginner or an expert, if you have the drive to learn and build, this is your playground. At Technojam, we don’t just follow trends—we create them. Throttle your passion, accelerate your skills, and code the future with us!`,
+  },
+
+  {
+    logo: "/logo/Kafila.webp",
+    title: "Kafila",
+    headTitle: "Club Heads",
+    headImage1:
+      "https://drive.google.com/open?id=1gw-xTLCaTg1usrY95jcs-xxjRuEYIQI-",
+    headImage2:
+      "https://drive.google.com/open?id=1JGNSNWO_fGVBTv_TFp5KnUuSnv7gQwKW",
+    CoverImages: "/coverimages/kafila.webp",
+    headName1: "Soumya Tripathi",
+    headName2: "Mayank Khandelwal",
+    description:
+      "Kafila – The Mental Health Society of Galgotias University is more than just a club; it’s a movement dedicated to fostering awareness, resilience, and support for mental well-being. In a world where mental health is often overlooked, we aim to break the stigma through open conversations, interactive workshops, expert-led sessions, and creative outreach initiatives. Our community stands as a safe space where students can share, heal, and grow together. At Kafila, we believe that mental health is just as important as physical health, and no one should struggle in silence. Join us in creating a campus where empathy thrives, voices are heard, and well-being is a priority—because mental health matters, today and always.",
   },
   {
     logo: "/logo/Graphex.webp",
@@ -25,18 +40,18 @@ const teamMembers = [
       "Graphex is more than just a design club; it's a creative powerhouse where imagination meets precision. As the heart of visual storytelling at Galgotias University, we craft compelling narratives through design, blending innovation with artistry. Every pixel we place and every concept we create reflects our passion for aesthetics and user experience. At Graphex, we don’t just design—we inspire, innovate, and redefine the boundaries of creativity. Whether it's branding, UI/UX, or motion graphics, we believe in the power of design to transform ideas into impactful visuals. Join us in shaping the future, one design at a time.",
   },
   {
-    logo: "/logo/Kafila.webp",
-    title: "Kafila",
+    logo: "/logo/Humans_of_Galgotias.webp",
+    title: "Humans of Galgotias",
     headTitle: "Club Heads",
     headImage1:
-      "https://drive.google.com/open?id=1gw-xTLCaTg1usrY95jcs-xxjRuEYIQI-",
+      "https://drive.google.com/open?id=1DK_TWP_lkiBuelmbJEMY0EneGkMyA4W3",
     headImage2:
-      "https://drive.google.com/open?id=1JGNSNWO_fGVBTv_TFp5KnUuSnv7gQwKW",
-    CoverImages: "/coverimages/kafila.webp",
-    headName1: "Soumya Tripathi",
-    headName2: "Mayank Khandelwal",
+      "https://drive.google.com/open?id=1Ap242hfpoYXVInElI4JC5_X4F7yA0KmL",
+    CoverImages: "/coverimages/hog.webp",
+    headName1: "Devasheesh Patel",
+    headName2: "Abhishek Shukla",
     description:
-      "Kafila – The Mental Health Society of Galgotias University is more than just a club; it’s a movement dedicated to fostering awareness, resilience, and support for mental well-being. In a world where mental health is often overlooked, we aim to break the stigma through open conversations, interactive workshops, expert-led sessions, and creative outreach initiatives. Our community stands as a safe space where students can share, heal, and grow together. At Kafila, we believe that mental health is just as important as physical health, and no one should struggle in silence. Join us in creating a campus where empathy thrives, voices are heard, and well-being is a priority—because mental health matters, today and always.",
+      "Humans of Galgotia is a podcast club at Galgotias University that focuses on storytelling and discussions on diverse topics, including personal experiences, social issues, technology, and college life. The club provides a platform for students to share their thoughts through engaging podcast episodes. Members collaborate on scripting, recording, editing, and publishing content, gaining hands-on experience in audio production. With a commitment to creativity and meaningful conversations, Humans of Galgotia fosters a vibrant community where students explore their passion for podcasting, enhance communication skills, and create impactful content that resonates with a wider audience.",
   },
   {
     logo: "/logo/book-club.webp",
@@ -52,20 +67,7 @@ const teamMembers = [
     description:
       "All-Booked: Where pages turn into passionate debates and reviews ignite new perspectives. We're a safe haven for literary explorers, diving into diverse worlds crafted by words. Join us to discover fresh realities and celebrate the power of stories. In every book, a new adventure awaits.",
   },
-  {
-    logo: "/logo/Humans_of_Galgotias.webp",
-    title: "Humans of Galgotias",
-    headTitle: "Club Heads",
-    headImage1:
-      "https://drive.google.com/open?id=1DK_TWP_lkiBuelmbJEMY0EneGkMyA4W3",
-    headImage2:
-      "https://drive.google.com/open?id=1Ap242hfpoYXVInElI4JC5_X4F7yA0KmL",
-    CoverImages: "/coverimages/hog.webp",
-    headName1: "Devasheesh Patel",
-    headName2: "Abhishek Shukla",
-    description:
-      "Humans of Galgotia is a podcast club at Galgotias University that focuses on storytelling and discussions on diverse topics, including personal experiences, social issues, technology, and college life. The club provides a platform for students to share their thoughts through engaging podcast episodes. Members collaborate on scripting, recording, editing, and publishing content, gaining hands-on experience in audio production. With a commitment to creativity and meaningful conversations, Humans of Galgotia fosters a vibrant community where students explore their passion for podcasting, enhance communication skills, and create impactful content that resonates with a wider audience.",
-  },
+
   {
     logo: "/logo/frag.webp",
     title: "Frag Club",
@@ -94,20 +96,7 @@ const teamMembers = [
     description:
       "Sponsorship team is the only club in Galgotias Student council which deals with financial part of the event whether it is for funding of an event or handling budgeting. We provide students with learnings in the domain of Finances, Professionalism, and how to tackle stressful situations.",
   },
-  {
-    logo: "/logo/SMT.webp",
-    title: "Stage Management Team",
-    headTitle: "Club Heads",
-    headImage1:
-      "https://drive.google.com/open?id=1jGlAlfdDCjTlyuWVWkqQxzKbunNlo4IT",
-    headImage2:
-      "https://drive.google.com/open?id=1sqG_SUCVcllr1_KE5FnHt3RqC-iVOPIA",
-    CoverImages: "/coverimages/smt.webp",
-    headName1: "Bhavya Singhal",
-    headName2: "Sakshi Soni",
-    description:
-      "Setting The Stage, Stealing The Show. Ever wondered what keeps a grand event running smoothly? That’s us—the Stage Management Team! We’re the invisible hands behind the magic, ensuring every performance starts on time, every mic is in place, and every spotlight hits just right. From cueing artists to syncing sound and lights, we turn chaos into a seamless spectacle. No last-minute hiccup is too big for us to handle! If you’ve ever witnessed a flawless show at Unifest, know that we were working tirelessly behind the scenes to make it happen!",
-  },
+
   {
     logo: "/logo/Quizzard.webp",
     title: "Quizzards",
@@ -123,19 +112,20 @@ const teamMembers = [
       "Quizzards is the vibrant and intellectually stimulating quiz club of Galgotias University where curiosity meets competition. We're a community of passionate individuals united by our love for trivia, knowledge, and the thrill of competition. We curate and conduct a wide array of engaging quizzes that cater to diverse interests, and foster a spirit of healthy rivalry. From culture enthusiasts to academic aficionados, everyone finds their niche within our community. We strive to create an inclusive space where every question sparks discovery and every quiz is an opportunity to learn and grow. Quizzards: We Put The Q in IQ!",
   },
   {
-    logo: "/logo/Cyber cell.webp",
-    title: "Cyber Cell",
+    logo: "/logo/SMT.webp",
+    title: "Stage Management Team",
     headTitle: "Club Heads",
     headImage1:
-      "https://drive.google.com/open?id=1N58HE_8kMCVV0hOOjaDrWavgQnxqjQi9",
+      "https://drive.google.com/open?id=1jGlAlfdDCjTlyuWVWkqQxzKbunNlo4IT",
     headImage2:
-      "https://drive.google.com/open?id=100IrGFPezLV57wdn8LIewOY-3oyBfAiR",
-    CoverImages: "/coverimages/cybercell.webp",
-    headName1: "Priyanshu Bhardwaj",
-    headName2: "Ayushi Shukla",
+      "https://drive.google.com/open?id=1sqG_SUCVcllr1_KE5FnHt3RqC-iVOPIA",
+    CoverImages: "/coverimages/smt.webp",
+    headName1: "Bhavya Singhal",
+    headName2: "Sakshi Soni",
     description:
-      "In today's cyber age, cybersecurity is not just a capability—it's a responsibility. At Cyber Cell GU, we are learners, innovators bound together by our mission to understand, prevent, and counter cyber threats. Through hands-on workshops, academic research, and real-world problem-solving, we learn how to protect data, networks, and personal privacy. Defense is not a goal, however, but one step ahead among the ever-changing cyber realities. Join us toward a secure online future—one step at a time.",
+      "Setting The Stage, Stealing The Show. Ever wondered what keeps a grand event running smoothly? That’s us—the Stage Management Team! We’re the invisible hands behind the magic, ensuring every performance starts on time, every mic is in place, and every spotlight hits just right. From cueing artists to syncing sound and lights, we turn chaos into a seamless spectacle. No last-minute hiccup is too big for us to handle! If you’ve ever witnessed a flawless show at Unifest, know that we were working tirelessly behind the scenes to make it happen!",
   },
+
   {
     logo: "/logo/G-Post.webp",
     title: "G-Post",
@@ -149,6 +139,20 @@ const teamMembers = [
     headName2: "Vimanshu",
     description:
       "Welcome to G Post, the Magazine and Reporter's society of Galgotias University! Our motto, 'Event ke saath bhi, event ke baad bhi,' embodies our commitment to capturing campus life during and after events. We strategize roles based on strengths, report live moments, conduct interviews, and gather multimedia content. Post-event, we regroup to share insights and craft event reports that reflect our diverse community. More than a team, we’re a family united by our passion for creativity. Join us on this exciting journey, and let’s create some magic together!",
+  },
+  {
+    logo: "/logo/Cyber cell.webp",
+    title: "Cyber Cell",
+    headTitle: "Club Heads",
+    headImage1:
+      "https://drive.google.com/open?id=1N58HE_8kMCVV0hOOjaDrWavgQnxqjQi9",
+    headImage2:
+      "https://drive.google.com/open?id=100IrGFPezLV57wdn8LIewOY-3oyBfAiR",
+    CoverImages: "/coverimages/cybercell.webp",
+    headName1: "Priyanshu Bhardwaj",
+    headName2: "Ayushi Shukla",
+    description:
+      "In today's cyber age, cybersecurity is not just a capability—it's a responsibility. At Cyber Cell GU, we are learners, innovators bound together by our mission to understand, prevent, and counter cyber threats. Through hands-on workshops, academic research, and real-world problem-solving, we learn how to protect data, networks, and personal privacy. Defense is not a goal, however, but one step ahead among the ever-changing cyber realities. Join us toward a secure online future—one step at a time.",
   },
   {
     logo: "/logo/GSS.webp",
@@ -333,7 +337,8 @@ const teamMembers = [
     CoverImages: "/coverimages/marketing.jpg",
     headName1: "Suryansh Mehra",
     headName2: "Sristy Singh",
-    description:`The Galgotias University Marketing Team is the creative heartbeat of campus life, crafting vibrant campaigns that captivate and connect. From dynamic storytelling to electrifying event promotions, they shape the university’s identity and culture. Through innovative collaborations and strategic partnerships, the team bridges Galgotias with the wider world, turning passion into purpose and inspiring the community.`}
+    description: `The Galgotias University Marketing Team is the creative heartbeat of campus life, crafting vibrant campaigns that captivate and connect. From dynamic storytelling to electrifying event promotions, they shape the university’s identity and culture. Through innovative collaborations and strategic partnerships, the team bridges Galgotias with the wider world, turning passion into purpose and inspiring the community.`,
+  },
 ];
 
 export default function CardsClubHeads({ activeTab }) {
@@ -358,18 +363,27 @@ export default function CardsClubHeads({ activeTab }) {
             key={member.title}
             className={`relative flex flex-col items-center justify-center text-center min-h-screen ${bgColor} p-2 w-full bg-cover bg-center bg-no-repeat`}
           >
-            {/* Top Section - Logo, Title, Head Images */}
-            <div className="w-full max-w-6xl flex flex-col md:flex-row justify-center items-center py-4">
-              {/* Graphex Logo (Top Left) */}
-              <img
-                src={member.logo}
-                alt="Graphex Logo"
-                className="w-40 h-auto"
-              />
+            {/* Top Section - Logo, Title */}
+            <div className="w-full max-w-6xl flex items-center justify-start py-4 relative">
+              {/* Logo (Left) - With lazy loading and low-quality image placeholder */}
+              <div className="w-20 h-20 absolute left-0 bg-gray-200 animate-pulse">
+                <img
+                  src={member.logo}
+                  alt={`${member.title} Logo`}
+                  className="w-full h-auto object-contain"
+                  loading="lazy"
+                  onLoad={(e) =>
+                    e.target.parentNode.classList.remove(
+                      "animate-pulse",
+                      "bg-gray-200"
+                    )
+                  }
+                />
+              </div>
 
-              {/* Title */}
+              {/* Title (Center) */}
               <h2
-                className={`text-3xl md:text-4xl font-semibold uppercase ${textColor} mb-4 md:mb-0`}
+                className={`text-3xl md:text-4xl font-semibold uppercase ${textColor} w-full text-center`}
               >
                 {member.title}
               </h2>
@@ -413,16 +427,42 @@ export default function CardsClubHeads({ activeTab }) {
                     </div>
                   </div>
                 </div>
-
-                {/* Club Image (Right Side) */}
+                {/* Club Image (Right Side) - With progressive loading */}
                 <div className="flex justify-center order-first md:order-last">
-                  <div className="relative overflow-hidden rounded-xl shadow-xl">
+                  <div className="relative overflow-hidden rounded-xl shadow-xl bg-gray-200">
+                    {/* Placeholder with fixed dimensions to prevent layout shifts */}
+                    <div
+                      className="animate-pulse absolute inset-0 bg-gray-300"
+                      style={{ aspectRatio: "16/9" }}
+                    ></div>
+
+                    {/* Main image with revised loading approach */}
                     <img
                       src={member.CoverImages}
                       alt={member.title}
-                      className="w-full max-w-md h-auto object-cover transition-transform duration-300 hover:scale-105"
+                      className="w-full max-w-md h-auto object-cover transition-all duration-300 hover:scale-105 relative z-10"
+                      loading="lazy"
+                      decoding="async"
+                      style={{ minHeight: "200px" }}
+                      onError={(e) => {
+                        console.error(
+                          `Failed to load image: ${member.CoverImages}`
+                        );
+                        e.target.style.display = "none";
+                      }}
+                      onLoad={(e) => {
+                        // Make image visible immediately
+                        e.target.style.opacity = 1;
+
+                        // Remove placeholder animation
+                        const placeholder = e.target.previousElementSibling;
+                        if (placeholder) {
+                          placeholder.classList.remove("animate-pulse");
+                          placeholder.style.backgroundColor = "transparent";
+                        }
+                      }}
                     />
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 z-20">
                       <h2 className="text-xl md:text-2xl font-bold text-white">
                         {member.title}
                       </h2>
