@@ -121,9 +121,9 @@ const NavBar = () => {
 
                 {/* Buy Passes Button - Mobile */}
                 <div className="pb-4">
-                    <button className="bg-[#C01E0D] w-full text-white py-3 rounded-lg shadow-[inset_1px_4px_8px_rgba(0,0,0,0.4)] hover:bg-red-700 transition-colors font-medium">
-                        Buy Passes
-                    </button>
+                <Link href="https://bit.ly/unifest2025" className="block bg-[#C01E0D] w-full text-white py-3 rounded-lg shadow-[inset_1px_4px_8px_rgba(0,0,0,0.4)] hover:bg-red-700 transition-colors font-medium text-center">
+                    Buy Passes
+                </Link>
                 </div>
             </div>
         </nav>

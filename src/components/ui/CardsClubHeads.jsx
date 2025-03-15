@@ -319,7 +319,7 @@ const teamMembers = [
     headName1: "Umang Rajput",
     headName2: "Viraj Singh",
     description:
-      "GDC is the dance society of GUSC where we represent different forms of dance.",
+      "The Galgotias Dance Crew is a dynamic and talented group of dancers from Galgotias University, where we showcase a variety of dance styles from contemporary to hip hop to regional and indian classical fusions. We as a crew are known for our enthusiasm on stage and teamwork. The crew has earned a reputation for putting on high energy performances that captivates everyone. Whether at University events or competitions, GDC continues to represent their crew with pride and dedication.",
   },
   {
     logo: "/logo/robotics.webp",
