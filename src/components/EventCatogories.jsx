@@ -26,7 +26,7 @@ const EventCategories = () => {
   ];
 
   return (
-    <div className="flex flex-col z-10 gap-10 w-full px-4 sm:px-6 md:px-8" id="events">
+    <div className="flex flex-col z-10 gap-10 w-full px-4 sm:px-6 md:px-8 pb-5" id="events">
       <Heading>Event Categories</Heading>
 
       <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-3 md:gap-4 lg:gap-6 w-full">
