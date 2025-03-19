@@ -11,7 +11,7 @@ export default function Home() {
           Sponsors
         </h2>
           <Paragraph color="#E3ED7B]">
-            Meet the amazing partners who help make Uphoria possible. Their
+            Meet the amazing partners who help make Unifest possible. Their
             support drives our passion for creating unforgettable experiences.
           </Paragraph>
         </div>
