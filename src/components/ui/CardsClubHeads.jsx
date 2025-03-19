@@ -364,9 +364,9 @@ export default function CardsClubHeads({ activeTab }) {
             className={`relative flex flex-col items-center justify-center text-center min-h-screen ${bgColor} p-2 w-full bg-cover bg-center bg-no-repeat`}
           >
             {/* Top Section - Logo, Title */}
-            <div className="w-full max-w-6xl flex items-center justify-start py-4 relative">
+            <div className="w-full max-w-6xl flex items-center py-4">
               {/* Logo (Left) - With lazy loading and low-quality image placeholder */}
-              <div className="w-20 h-20 absolute left-0 bg-gray-200 animate-pulse">
+              <div className="w-20 h-20 bg-gray-200 animate-pulse">
                 <img
                   src={member.logo}
                   alt={`${member.title} Logo`}
@@ -380,10 +380,9 @@ export default function CardsClubHeads({ activeTab }) {
                   }
                 />
               </div>
-
               {/* Title (Center) */}
               <h2
-                className={`text-3xl md:text-4xl font-semibold uppercase ${textColor} w-full text-center`}
+                className={`text-3xl md:text-4xl font-semibold uppercase ${textColor} w-3/4 md:w-full text-center`}
               >
                 {member.title}
               </h2>
