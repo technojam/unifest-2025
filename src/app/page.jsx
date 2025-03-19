@@ -12,8 +12,6 @@ export default function Home() {
   return (
     <div
       className="relative flex flex-col gap-10 w-full items-center flex-grow min-h-screen">
-
-      
       <Welcome />
       <AboutFest />
          <Carousel />
